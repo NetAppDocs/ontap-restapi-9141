@@ -37,7 +37,7 @@ settings:
 
 sidebar: 
   entries:
-    - title: ONTAP 9.15.1 REST API docs 
+    - title: ONTAP 9.14.1 REST API docs 
       url: /index.html
     - section: ontap
     - title: Legal notices
