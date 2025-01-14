@@ -199262,7 +199262,7 @@ paths:
         retrieves all audit log records. An audit log record contains information
         such as timestamp, node name, index and so on.\n<br />\n---\n## Example\n###
         Retrieving audit log records\nThe following example shows the audit log 
-        records. Note that the index field is used to order entries before they are 
+        records. Note: The index field is used to order entries before they are 
         displayed by the security counter. If two entries occur simultaneously, the 
         index assigns an order to ensure logical consistency. \n<br
         />\n---\n```\n# The API:\n/api/security/audit/messages\n# The call:\ncurl
