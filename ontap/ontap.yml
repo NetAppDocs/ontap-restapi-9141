@@ -93538,7 +93538,7 @@ definitions:
         x-nullable: true
       index:
         description: Internal index for accessing records with the same time and node. This
-          is a 64 bit unsigned value that is used to order the audit log entries before
+          is a 64 bit unsigned value that is used to order the audit log messages before
           they are displayed. If multiple entries for the same node
           and timestamp occur simultaneously, the index assigns an order to ensure logical 
           consistency. 
@@ -199263,7 +199263,7 @@ paths:
         retrieves all audit log records. An audit log record contains information
         such as timestamp, node name, index and so on.\n<br />\n---\n## Example\n###
         Retrieving audit log records\nThe following example shows the audit log 
-        records. Note: The index field is used to order the audit log entries before 
+        records. Note: The index field is used to order the audit log messages before 
         they are displayed. If multiple entries for the same node and timestamp occur 
         simultaneously, the index assigns an order to ensure logical consistency. \n<br
         />\n---\n```\n# The API:\n/api/security/audit/messages\n# The call:\ncurl
