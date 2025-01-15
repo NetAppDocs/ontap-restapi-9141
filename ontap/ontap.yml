@@ -93539,7 +93539,7 @@ definitions:
       index:
         description: Internal index for accessing records with the same time or node. This
           is a 64 bit unsigned value that is used to order entries before
-          they are displayed by the security counter. If multiple entries for the same node
+          they are displayed. If multiple entries for the same node
           and timestamp occur simultaneously, the index assigns an order to ensure logical 
           consistency. 
         readOnly: true
