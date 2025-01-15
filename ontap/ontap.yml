@@ -93537,7 +93537,7 @@ definitions:
         x-ntap-introduced: '9.6'
         x-nullable: true
       index:
-        description: Internal index for accessing records with the same time or node. This
+        description: Internal index for accessing records with the same time and node. This
           is a 64 bit unsigned value that is used to order entries before
           they are displayed. If multiple entries for the same node
           and timestamp occur simultaneously, the index assigns an order to ensure logical 
