@@ -1,0 +1,65 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'delete-network-ip-subnets-.html'
+summary: 'Delete an IP subnet'
+---
+
+= Delete an IP subnet
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/network/ip/subnets/{uuid}`#
+
+*Introduced In:* 9.11
+
+Deletes an IP subnet.
+
+== Related ONTAP commands
+
+* `network subnet delete`
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|uuid
+|string
+|path
+|True
+a|IP subnet UUID
+
+|===
+
+== Response
+
+```
+Status: 200, Ok
+```
+
+== Error
+
+```
+Status: Default
+```
+
+Fill error codes below.
+ONTAP Error Response Codes
+
+|===
+| Error Code | Description
+
+| 1377663
+| The specified IP address range of subnet in IPspace contains an address already in use by a LIF.
+|===
+
+Also see the table of common errors in the link:getting_started_with_the_ontap_rest_api.html#Response_body[Response body] overview section of this documentation.
+
+

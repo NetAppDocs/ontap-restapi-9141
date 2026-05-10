@@ -1,0 +1,79 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'view_and_update_key_manager_configurations.html'
+summary: 'View and update key manager configurations'
+---
+
+= View and update key manager configurations
+
+
+
+== Overview
+
+Retrieves or modifies the key management configuration options. The following operations are supported:
+
+* GET
+* PATCH
+
+== Examples
+
+=== Retrieving cluster-level key manager configurations
+
+The following example shows how to retrieve cluster-level manager configurations.
+
+----
+
+# The API:
+GET /api/security/key-manager-configs
+
+# The call:
+curl -X GET 'https://<mgmt-ip>/api/security/key-manager-configs' -H 'accept: application/hal+json'
+
+# The response:
+{
+  "cc_mode_enabled": false,
+  "health_monitor_polling_interval": 15,
+  "cloud_kms_retry_count": 3,
+  "_links": {
+    "self": {
+      "href": "/api/security/key-manager-configs"
+    }
+  }
+}
+----
+
+'''
+
+=== Updating the cluster-level key manager configurations
+
+The following example shows how to modify the "health_monitor_polling_interval" and "cloud_kms_retry_count" fields.
+
+----
+
+# The API:
+PATCH /api/security/key-manager-configs
+
+# The call:
+curl -X PATCH 'https://<mgmt-ip>/api/security/key-manager-configs' -H 'accept: application/hal+json' -d "{ \"health_monitor_polling_interval\" : \"20\", \"cloud_kms_retry_count\" : \"5\" }"
+----
+
+'''
+
+=== Updating the cluster-level key manager configurations
+
+The following example shows how to modify the "cc_mode".
+
+----
+
+# The API:
+PATCH /api/security/key-manager-configs
+
+# The call:
+curl -X PATCH 'https://<mgmt-ip>/api/security/key-manager-configs' -H 'accept: application/hal+json' -d "{ \"cc_mode_enabled\" : \"true\", \"passphrase\": \"current_passphrase\" }"
+----
+
+'''
+
+

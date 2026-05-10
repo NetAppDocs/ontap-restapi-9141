@@ -1,0 +1,187 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'retrieve_clients.html'
+summary: 'Retrieve clients'
+---
+
+= Retrieve clients
+
+
+
+== Overview
+
+You can use this API to retrieve a list of clients with the most IO activity for FlexVol and FlexGroup volumes belonging to a specified SVM. To obtain this list, only the volumes which have the activity tracking feature enabled are considered.
+
+This API is used to provide insight into IO activity and supports ordering by IO activity types, namely `iops` and `throughput` metrics. Use the `top_metric` parameter to specify which type of IO activity to filter for. This API supports returning only one IO activity type per request.
+
+== Enabling and disabling activity tracking feature
+
+The following APIs can be used to enable, disable, and retrieve the activity tracking state for a FlexVol or a FlexGroup volume.
+
+&ndash; PATCH  /api/storage/volumes/\{uuid} -d '{"activity_tracking.state":"on"}'
+
+&ndash; PATCH  /api/storage/volumes/\{uuid} -d '{"activity_tracking.state":"off"}'
+
+&ndash; GET    /api/storage/volumes/\{uuid}/?fields=activity_tracking
+
+== Excluded volumes list
+
+Optionally, the API returns an excluded list of activity tracking-enabled volumes, which were not accounted for when obtaining the list of clients with the most IO activity for the SVM. This excluded list contains both the volume information and the reason for exclusion.
+
+== Failure to return list of clients with most IO activity
+
+The API can sometimes fail to return the list of clients with the most IO activity, due to the following reasons:
+
+&ndash; The volumes belonging to the SVM do not have the activity tracking feature enabled.
+
+&ndash; The volumes belonging to the SVM do not have read/write traffic.
+
+&ndash; The read traffic is served by the NFS/CIFS client filesystem cache.
+
+&ndash; On rare occasions, the incoming traffic pattern is not suitable to obtain the list of clients with the most IO activity.
+
+== Retrieve a list of the clients with the most IO activity
+
+For a report on the clients with the most IO activity returned in descending order, specify the IO activity type you want to filter for by passing the `iops` or `throughput` IO activity type into the top_metric parameter. If the IO activity type is not specified, by default the API returns a list of clients with the greatest number of average read operations per second. The maximum number of clients returned by the API for an IO activity type is 25.
+
+&ndash; GET   /api/svm/svms/{svm.uuid}/top-metrics/clients
+
+== Examples
+
+=== Retrieving a list of the clients with the greatest average number of write operations per second:
+
+'''
+
+----
+
+# The API:
+GET /api/svm/svms/{svm.uuid}/top-metrics/clients
+
+# The Call:
+curl -X GET "https://<mgmt-ip>/api/svm/svms/{svm.uuid}/top-metrics/clients?top_metric=iops.write"
+
+# The Response:
+{
+"records": [
+  {
+    "svm": {
+      "name": "vs1"
+    },
+    "iops": {
+      "write": 1495,
+      "error": {
+        "lower_bound": 1495,
+        "upper_bound": 1505
+      }
+    },
+    "client_ip": "172.28.71.128"
+  },
+  {
+    "svm": {
+      "name": "vs1"
+    },
+    "iops": {
+      "write": 1022,
+      "error": {
+        "lower_bound": 1022,
+        "upper_bound": 1032
+      }
+    },
+    "client_ip": "172.28.71.179"
+  },
+  {
+    "svm": {
+      "name": "vs1"
+    },
+    "iops": {
+      "write": 345,
+      "error": {
+        "lower_bound": 345,
+        "upper_bound": 355
+      }
+    },
+    "client_ip": "172.28.51.62"
+  }
+],
+"num_records": 3,
+"excluded_volumes": [
+  {
+    "volume": {
+      "uuid": "5bbfc226-3fd8-42c9-a651-fa6167c2cf84",
+      "name": "vol10",
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/5bbfc226-3fd8-42c9-a651-fa6167c2cf84"
+        }
+      }
+    },
+    "reason": {
+      "message": "resource limit exceeded",
+      "code": "12345"
+    },
+    "_links": {
+      "self": {
+        "href": "/api/storage/volumes/5bbfc226-3fd8-42c9-a651-fa6167c2cf84"
+      }
+    }
+  },
+  {
+    "volume": {
+      "uuid": "5bbfc227-3fd8-42c9-a651-fa6167c2cf85",
+      "name": "vol22",
+      "_links": {
+        "self": {
+          "href": "/api/storage/volumes/5bbfc227-3fd8-42c9-a651-fa6167c2cf85"
+        }
+      }
+    },
+    "reason": {
+      "message": "The volume is offline.",
+      "code": "23456"
+    },
+    "_links": {
+      "self": {
+        "href": "/api/storage/volumes/5bbfc227-3fd8-42c9-a651-fa6167c2cf85"
+      }
+    }
+  }
+],
+"_links": {
+  "self": {
+    "href": "/api/svm/svms/572361f3-e769-439d-9c04-2ba48a08ff43/top-metrics/clients?top_metric=iops.write"
+  }
+}
+}
+----
+
+'''
+
+=== Example showing the behavior of the API when there is no read/write traffic:
+
+----
+
+# The Call:
+curl -X GET "https://<mgmt-ip>/api/svm/svms/{svm.uuid}/top-metrics/clients?top_metric=throughput.write"
+
+# The Response:
+{
+"records": [
+],
+"num_records": 0,
+"notice": {
+  "message": "The activity tracking report for SVM \"vs1\" returned zero records. Check whether the volumes belonging to the SVM have read/write traffic. Refer to the REST API documentation for more information on why there might be no records.",
+  "code": "124519405",
+},
+"_links": {
+  "self": {
+    "href": "/api/svm/svms/572361f3-e769-439d-9c04-2ba48a08ff43/top-metrics/clients?top_metric=throughput.write"
+  }
+}
+}
+----
+
+'''
+
+

@@ -1,0 +1,330 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'post-protocols-fpolicy-persistent-stores.html'
+summary: 'Create an FPolicy persistent store configuration for an SVM'
+---
+
+= Create an FPolicy persistent store configuration for an SVM
+
+[.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/fpolicy/{svm.uuid}/persistent-stores`#
+
+*Introduced In:* 9.14
+
+Creates an FPolicy persistent store configuration for a specified SVM.
+
+Important notes:
+
+* FPolicy persistent store creation is allowed only on data SVMs.
+* In persistent mode, when the persistent store is full, event notifications are dropped.
+
+== Required properties
+
+* `svm.uuid` - Existing SVM in which to create the FPolicy persistent store.
+* `name` - Name of the FPolicy persistent store.
+* `volume` - Volume specified for persistent store (only FlexVol volumes of type RW are supported).
+
+== Related ONTAP commands
+
+* `fpolicy persistent-store create`
+
+== Learn more
+
+* link:manage_fpolicy_persistent_store_configuration.html[DOC /protocols/fpolicy/{svm.uuid}/persistent-stores]
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|return_records
+|boolean
+|query
+|False
+a|The default is false.  If set to true, the records are returned.
+
+* Default value:
+
+
+|svm.uuid
+|string
+|path
+|True
+a|UUID of the SVM to which this object belongs.
+
+|===
+
+== Request Body
+
+                
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|name
+|string
+a|The name specified for the FPolicy persistent store.
+
+
+|svm
+|link:#svm[svm]
+a|
+
+|volume
+|string
+a|The specified volume to store the events for the FPolicy persistent store.
+
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "name": "ps1",
+  "svm": {
+    "uuid": "string"
+  },
+  "volume": "psvol"
+}
+====
+
+== Response
+
+```
+Status: 201, Created
+```
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|num_records
+|integer
+a|Number of records
+
+
+|records
+|array[link:#fpolicy_persistent_store[fpolicy_persistent_store]]
+a|
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "num_records": 1,
+  "records": [
+    {
+      "name": "ps1",
+      "svm": {
+        "uuid": "string"
+      },
+      "volume": "psvol"
+    }
+  ]
+}
+====
+
+=== Headers
+
+[cols=3*,options=header]
+|===
+//header
+|Name
+|Description
+|Type
+//end header
+
+//start row
+|Location
+|Useful for tracking the resource location
+|string
+//end row
+//end table
+|=== 
+
+== Error
+
+```
+Status: Default
+```
+
+|===
+| Error Code | Description
+
+| 9765052
+| Cannot create more than one persistent store per SVM
+
+| 9765053
+| Volume mentioned does not exist in the SVM
+
+| 9765068
+| The persistent store name is too long. It must not exceed 500 characters
+
+| 2621516
+| This operation is only supported on a data SVM
+
+| 9765069
+| Volume is not a Flexvol. Only FlexVols are supported for this operation.
+
+| 9765071
+| Volume without junction-path is not supported.
+
+| 9765072
+| Volume is not of type RW. Only volumes of type RW are supported.
+|===
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#svm]
+[.api-collapsible-fifth-title]
+svm
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|uuid
+|string
+a|SVM UUID
+
+
+|===
+
+
+[#fpolicy_persistent_store]
+[.api-collapsible-fifth-title]
+fpolicy_persistent_store
+
+The information that an FPolicy process needs in order to configure a persistent store.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|name
+|string
+a|The name specified for the FPolicy persistent store.
+
+
+|svm
+|link:#svm[svm]
+a|
+
+|volume
+|string
+a|The specified volume to store the events for the FPolicy persistent store.
+
+
+|===
+
+
+[#href]
+[.api-collapsible-fifth-title]
+href
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|href
+|string
+a|
+
+|===
+
+
+[#_links]
+[.api-collapsible-fifth-title]
+_links
+[#error_arguments]
+[.api-collapsible-fifth-title]
+error_arguments
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|code
+|string
+a|Argument code
+
+
+|message
+|string
+a|Message argument
+
+
+|===
+
+
+[#returned_error]
+[.api-collapsible-fifth-title]
+returned_error
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|arguments
+|array[link:#error_arguments[error_arguments]]
+a|Message arguments
+
+
+|code
+|string
+a|Error code
+
+
+|message
+|string
+a|Error message
+
+
+|target
+|string
+a|The target parameter that caused the error.
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

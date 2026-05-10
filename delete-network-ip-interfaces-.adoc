@@ -1,0 +1,70 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'delete-network-ip-interfaces-.html'
+summary: 'Delete an IP interface'
+---
+
+= Delete an IP interface
+
+[.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/network/ip/interfaces/{uuid}`#
+
+*Introduced In:* 9.6
+
+Deletes an IP interface.
+
+== Related ONTAP commands
+
+* `network interface delete`
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|uuid
+|string
+|path
+|True
+a|IP interface UUID
+
+|===
+
+== Response
+
+```
+Status: 200, Ok
+```
+
+== Error
+
+```
+Status: Default
+```
+
+ONTAP Error Response Codes
+
+|===
+| Error Code | Description
+
+| 1966465
+| LIF cannot be removed because it is required to maintain quorum on the node.
+
+| 5376953
+| The interface is part of one or more portsets. Remove the interface from all portsets before deleting it.
+
+| 53281039
+| Failed to delete the interface because it has an associated BGP peer group.
+|===
+
+Also see the table of common errors in the link:getting_started_with_the_ontap_rest_api.html#Response_body[Response body] overview section of this documentation.
+
+

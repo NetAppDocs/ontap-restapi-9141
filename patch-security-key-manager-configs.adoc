@@ -1,0 +1,237 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'patch-security-key-manager-configs.html'
+summary: 'Update key manager configurations'
+---
+
+= Update key manager configurations
+
+[.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/security/key-manager-configs`#
+
+*Introduced In:* 9.10
+
+Updates key manager configurations.
+
+== Related ONTAP commands
+
+* `security key-manager config modify`
+
+
+== Request Body
+
+                
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|cc_mode_enabled
+|boolean
+a|Indicates whether the Common Criteria Mode configuration is enabled.
+
+
+|cloud_kms_retry_count
+|integer
+a|Cloud key manager connection retry count. Supported value range of 0-10.
+
+
+|health_monitor_polling_interval
+|integer
+a|Health Monitor Polling Period, in minutes. Supported value range of 15-30 minutes.
+
+
+|passphrase
+|string
+a|Current cluster-wide passphrase. This is a required field when setting the cc_mode_enabled field value to true. This is not audited.
+
+
+|===
+
+
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "cloud_kms_retry_count": 3,
+  "health_monitor_polling_interval": 20,
+  "passphrase": "The cluster passphrase of length 64-256 ASCII characters."
+}
+====
+
+== Response
+
+```
+Status: 200, Ok
+```
+
+== Error
+
+```
+Status: Default
+```
+
+ONTAP Error Response Codes
+
+|===
+| Error Code | Description
+
+| 65536139
+| Cluster-wide passphrase is incorrect.
+
+| 65536805
+| Common Criteria Mode requires an effective cluster version of ONTAP 9.4 or later.
+
+| 65536806
+| Passphrase length error.
+
+| 65536807
+| MetroCluster cannot be configured while in Common Criteria mode.
+
+| 65536809
+| Common Criteria mode is disabled on the cluster. Contact technical support for assistance in enabling Common Criteria mode.
+
+| 65537301
+| The Onboard Key Manager is not enabled.
+
+| 65537302
+| The passphrase field is required when changing cc_mode_enabled to true.
+
+| 65537303
+| Modifying polling period requires an effective cluster version of ONTAP 9.10 or later.
+
+| 65537304
+| Unable to modify polling period because no external key management is configured on the cluster.
+
+| 65538404
+| Modifying cloud keymanager retry count requires an effective cluster version of ONTAP 9.11 or later.
+|===
+
+Also see the table of common errors in the link:getting_started_with_the_ontap_rest_api.html#Response_body[Response body] overview section of this documentation.
+
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#href]
+[.api-collapsible-fifth-title]
+href
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|href
+|string
+a|
+
+|===
+
+
+[#self_link]
+[.api-collapsible-fifth-title]
+self_link
+[#key_manager_config]
+[.api-collapsible-fifth-title]
+key_manager_config
+
+Manages the various key manager configuration options.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|cc_mode_enabled
+|boolean
+a|Indicates whether the Common Criteria Mode configuration is enabled.
+
+
+|cloud_kms_retry_count
+|integer
+a|Cloud key manager connection retry count. Supported value range of 0-10.
+
+
+|health_monitor_polling_interval
+|integer
+a|Health Monitor Polling Period, in minutes. Supported value range of 15-30 minutes.
+
+
+|passphrase
+|string
+a|Current cluster-wide passphrase. This is a required field when setting the cc_mode_enabled field value to true. This is not audited.
+
+
+|===
+
+
+[#error_arguments]
+[.api-collapsible-fifth-title]
+error_arguments
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|code
+|string
+a|Argument code
+
+
+|message
+|string
+a|Message argument
+
+
+|===
+
+
+[#returned_error]
+[.api-collapsible-fifth-title]
+returned_error
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|arguments
+|array[link:#error_arguments[error_arguments]]
+a|Message arguments
+
+
+|code
+|string
+a|Error code
+
+
+|message
+|string
+a|Error message
+
+
+|target
+|string
+a|The target parameter that caused the error.
+
+
+|===
+
+
+//end collapsible .Definitions block
+====
