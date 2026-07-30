@@ -78,10 +78,7 @@ a|
 [source,json,subs=+macros]
 {
   "name": "group1",
-  "skip_name_validation": true,
-  "users": [
-    {}
-  ]
+  "skip_name_validation": true
 }
 ====
 
