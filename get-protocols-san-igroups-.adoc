@@ -226,7 +226,6 @@ a|The unique identifier of the initiator group.
         }
       },
       "comment": "string",
-      "igroups": null,
       "name": "igroup1",
       "uuid": "4ea7a442-86d1-11e0-ae1c-123478563412"
     }
@@ -287,7 +286,6 @@ a|The unique identifier of the initiator group.
   ],
   "name": "igroup1",
   "os_type": "string",
-  "parent_igroups": null,
   "portset": {
     "_links": {
       "self": {
