@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_manage_metrocluster_configurations.html'
+keywords: 'metrocluster configuration,switchover command,heal operation,switchback operation,cluster peering,mediator parameters'
 summary: 'View and manage MetroCluster configurations'
 ---
 
 = View and manage MetroCluster configurations
+:imagesdir: ./media/
 
-
+[.lead]
+Manage MetroCluster configurations to create, operate, and gather information about your MetroCluster setup. Use these endpoints to fetch status and configuration parameters, initiate switchover, heal, or switchback actions, and set up new MetroClusters efficiently.
 
 = Overview
 

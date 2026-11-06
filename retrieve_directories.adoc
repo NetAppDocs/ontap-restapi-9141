@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_directories.html'
+keywords: 'directories performance, iops throughput, io metrics, read operations, capacity metric'
 summary: 'Retrieve directories'
 ---
 
 = Retrieve directories
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve a list of directories with the highest performance or capacity metrics for a specified volume. Use this API to gain insights into IO metrics like `iops`, `throughput`, and `non_recursive_bytes_used`. This tool supports one metric per request, providing valuable data for optimizing storage performance.
 
 == Overview
 

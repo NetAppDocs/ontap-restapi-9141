@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security-authentication-cluster-oauth2-clients-.html'
+keywords: 'oauth2 configuration,client name,introspection uri,jwks provider,cluster authentication'
 summary: 'Retrieve an OAuth 2.0 configuration with the specified name'
 ---
 
 = Retrieve an OAuth 2.0 configuration with the specified name
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the OAuth 2.0 configuration with a specified name to manage authentication settings for secure access.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security/authentication/cluster/oauth2/clients/{name}`#
 
-*Introduced In:* 9.14
+== Introduced in
 
-Retrieves the OAuth 2.0 configuration with the specified name.
+ONTAP 9.14
 
 == Related ONTAP commands
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_volume_snapshot_copies.html'
+keywords: 'manage snapshot,volume snapshot,snapshot copy,delete snapshot,create snapshot'
 summary: 'Manage volume Snapshot copies'
 ---
 
 = Manage volume Snapshot copies
+:imagesdir: ./media/
 
-
+[.lead]
+Explore Snapshot copy APIs for efficient management of filesystem views at specific points in time. Use these endpoints to create, modify, delete, and retrieve both individual and bulk Snapshot copies across volumes, accommodating scheduled, user requested, and SnapMirror copies.
 
 == Overview
 

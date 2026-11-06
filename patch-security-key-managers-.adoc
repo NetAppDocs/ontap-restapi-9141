@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-security-key-managers-.html'
+keywords: 'key manager,external key manager,onboard key manager,passphrase synchronization,server ca certificate,client certificate'
 summary: 'Update key managers'
 ---
 
 = Update key managers
+:imagesdir: ./media/
+
+[.lead]
+Updates the configuration of a key manager, modifying key management settings or synchronizing keys as needed.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/security/key-managers/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Updates a key manager.
 

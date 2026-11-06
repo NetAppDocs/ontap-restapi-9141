@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_files.html'
+keywords: 'iops,throughput,io activity,volume tracking,file metrics'
 summary: 'Retrieve files'
 ---
 
 = Retrieve files
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve files with the most IO activity for a specified volume using this API. Filter and order the results by IO activity types such as `iops` or `throughput`. Use these insights to analyze and optimize performance.
 
 == Overview
 

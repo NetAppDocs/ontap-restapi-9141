@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-multi-admin-verify-requests.html'
+keywords: 'multi admin verify,security request,multi admin request,verify request,admin approval'
 summary: 'Create a multi-admin-verify request'
 ---
 
 = Create a multi-admin-verify request
+:imagesdir: ./media/
+
+[.lead]
+Creates a multi-admin-verify request to initiate a process that requires multiple administrators to verify changes or operations. This ensures that critical actions are reviewed and authorized by more than one person, enhancing security and accountability.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/multi-admin-verify/requests`#
 
-*Introduced In:* 9.11
+== Introduced in
 
-Creates a multi-admin-verify request.
-
+ONTAP 9.11
 
 == Parameters
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-application-applications.html'
+keywords: 'retrieve applications,sort applications,svm applications,sql applications,san applications,iops applications'
 summary: 'Retrieve applications'
 ---
 
 = Retrieve applications
+:imagesdir: ./media/
+
+[.lead]
+Retrieves applications to access their configurations and properties, which can be useful for monitoring, classification, and analysis tasks.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/application/applications`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves applications.
+ONTAP 9.6
 
 == Expensive properties
 

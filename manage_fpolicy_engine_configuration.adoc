@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_fpolicy_engine_configuration.html'
+keywords: 'fpolicy engine,external servers,file access notifications,synchronous engine,asynchronous engine'
 summary: 'Manage FPolicy engine configuration'
 ---
 
 = Manage FPolicy engine configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Configure the FPolicy engine to manage the servers receiving file access notifications for your ONTAP system. Choose between synchronous and asynchronous engines, define notification formats, and specify primary and secondary servers to ensure reliable notification delivery.
 
 == Overview
 

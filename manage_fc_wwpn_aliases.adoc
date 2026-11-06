@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_fc_wwpn_aliases.html'
+keywords: 'fc wwpn,wwpn aliases,fibre channel initiator,wwpn identifier,san administrator'
 summary: 'Manage FC WWPN aliases'
 ---
 
 = Manage FC WWPN aliases
+:imagesdir: ./media/
 
-
+[.lead]
+Manage FC WWPN aliases to create, delete, and discover aliases for worldwide port names. This helps SAN administrators easily identify Fibre Channel initiators, especially in larger SAN environments.
 
 == Overview
 

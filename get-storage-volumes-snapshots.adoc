@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-volumes-snapshots.html'
+keywords: 'volume snapshots,reclaimable space,snapshot copies,snapshot show,snapshot delta'
 summary: 'Retrieve volume Snapshot copies'
 ---
 
 = Retrieve volume Snapshot copies
+:imagesdir: ./media/
+
+[.lead]
+Retrieves volume Snapshot copies to review or manage the available snapshots for a specific volume. This helps you understand the state and history of your volume data for backup or recovery purposes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/volumes/{volume.uuid}/snapshots`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves a collection of volume Snapshot copies.
 

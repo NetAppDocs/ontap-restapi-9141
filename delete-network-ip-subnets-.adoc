@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-network-ip-subnets-.html'
+keywords: 'ip subnet,delete subnet,network subnet,subnet removal,uuid subnet'
 summary: 'Delete an IP subnet'
 ---
 
 = Delete an IP subnet
+:imagesdir: ./media/
+
+[.lead]
+Deletes an IP subnet when you need to remove it from the network configuration.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/network/ip/subnets/{uuid}`#
 
-*Introduced In:* 9.11
+== Introduced in
 
-Deletes an IP subnet.
+ONTAP 9.11
 
 == Related ONTAP commands
 

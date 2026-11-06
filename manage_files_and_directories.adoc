@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_files_and_directories.html'
+keywords: 'file management,file system,directory management,file properties,symlink creation,delete directory'
 summary: 'Manage files and directories'
 ---
 
 = Manage files and directories
+:imagesdir: ./media/
 
-
+[.lead]
+Utilize the Manage files and directories endpoints to perform operations such as reading, writing, listing, and modifying file and directory properties. These endpoints are essential for handling file data, retrieving metadata, and managing file system analytics within your storage environment.
 
 == Overview
 

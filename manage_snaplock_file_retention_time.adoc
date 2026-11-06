@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_snaplock_file_retention_time.html'
+keywords: 'snaplock retention,privileged delete,snaplock file,worm retention,file expiry'
 summary: 'Manage SnapLock file retention time'
 ---
 
 = Manage SnapLock file retention time
+:imagesdir: ./media/
 
-
+[.lead]
+Manage the SnapLock file retention time to control how long files are preserved in a Write Once Read Many (WORM) state. Utilize this API to perform privileged-delete operations on files when necessary.
 
 This API manages the SnapLock retention time of a file. You can perform a privileged-delete operation by executing this API.
 

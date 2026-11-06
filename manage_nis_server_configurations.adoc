@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_nis_server_configurations.html'
+keywords: 'nis servers,nis domain,data svms,manage configurations,nis cluster'
 summary: 'Manage NIS server configurations'
 ---
 
 = Manage NIS server configurations
+:imagesdir: ./media/
 
-
+[.lead]
+Manage NIS server configurations to authenticate users and client computers within data SVMs. Utilize these endpoints to retrieve, create, update, and delete NIS configurations specific to your environment.
 
 == Overview
 

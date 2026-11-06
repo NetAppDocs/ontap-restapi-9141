@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-vscan.html'
+keywords: 'vscan configuration,vscan policies,vscan scanner-pool,on-access policy,on-demand policy,svm configuration'
 summary: 'Create a Vscan configuration'
 ---
 
 = Create a Vscan configuration
+:imagesdir: ./media/
+
+[.lead]
+Creates a Vscan configuration to manage virus scanning policies and scanner pools for a specified SVM. Use this endpoint to define whether the configuration is enabled or disabled, supporting efficient virus scanning operations within your ONTAP environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/vscan`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Creates a Vscan configuration, which includes a list of scanner-pools, Vscan On-Access policies and Vscan On-Demand policies. Defines whether the Vscan configuration you create is enabled or disabled for a specified SVM.
 

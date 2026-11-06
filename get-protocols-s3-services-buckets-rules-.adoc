@@ -3,16 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-s3-services-buckets-rules-.html'
+keywords: 's3 lifecycle rules,bucket rules,lifecycle management,object store,bucket parameters'
 summary: 'Retrieve all S3 lifecycle rules for a bucket'
 ---
 
 = Retrieve all S3 lifecycle rules for a bucket
+:imagesdir: ./media/
+
+[.lead]
+Retrieves all S3 lifecycle rules associated with a bucket, which is useful for managing and reviewing the lifecycle policies applied to your data objects.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/s3/services/{svm.uuid}/buckets/{s3_bucket.uuid}/rules/{name}`#
 
-*Introduced In:* 9.13
+== Introduced in
 
-Retrieves all S3 Lifecycle rules associated with a bucket. Note that in order to retrieve S3 bucket rule parametes, the 'fields' option should be set to '**'.
+ONTAP 9.13
+
+== Usage notes
+
+Note that in order to retrieve S3 bucket rule parametes, the 'fields' option should be set to '**'.
 
 == Related ONTAP commands
 

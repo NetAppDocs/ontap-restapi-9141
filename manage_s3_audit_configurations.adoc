@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_s3_audit_configurations.html'
+keywords: 's3 audit configurations,s3 events tracking,storage virtual machine security,log rotation size,log retention count'
 summary: 'Manage S3 audit configurations'
 ---
 
 = Manage S3 audit configurations
+:imagesdir: ./media/
 
-
+[.lead]
+S3 audit configuration endpoints help you track and log specific S3 events on storage virtual machines (SVMs) as a security measure. By monitoring these events, you can identify potential security issues and gather evidence in case of security breaches.
 
 == Overview
 

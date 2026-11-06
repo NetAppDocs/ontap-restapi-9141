@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-security-key-managers-.html'
+keywords: 'delete key manager,key manager uuid,remove key manager,security key manager,key manager disable'
 summary: 'Delete key managers'
 ---
 
 = Delete key managers
+:imagesdir: ./media/
+
+[.lead]
+Removes a key manager from your configuration, typically when you no longer need it or are replacing it with a different manager.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/security/key-managers/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Deletes a key manager.
 

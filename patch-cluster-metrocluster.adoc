@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-cluster-metrocluster.html'
+keywords: 'switchover,heal,switchback,metrocluster operation,cluster management,switchover configuration'
 summary: 'Initiate a switchover, heal, or switchback operation'
 ---
 
 = Initiate a switchover, heal, or switchback operation
+:imagesdir: ./media/
+
+[.lead]
+Initiates a switchover, heal, or switchback operation to manage the state of your MetroCluster configuration effectively. Use this operation to transition between different cluster states as needed.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/cluster/metrocluster`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Initiates a switchover, heal or switchback operation.
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_san_initiators.html'
+keywords: 'san initiator, fibre channel, iscsi initiator, initiator groups, svm configuration, world wide port name'
 summary: 'Manage SAN initiators'
 ---
 
 = Manage SAN initiators
+:imagesdir: ./media/
 
-
+[.lead]
+Manage SAN initiators using REST API endpoints that provide read-only access to initiator properties. These endpoints are useful for identifying host endpoints and controlling host access to specific LUNs within Storage Virtual Machines (SVMs).
 
 == Overview
 

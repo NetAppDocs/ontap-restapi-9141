@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-s3-services-buckets-rules-.html'
+keywords: 's3 bucket,lifecycle rule,delete rule,object store,bucket management,storage virtual machine'
 summary: 'Delete an S3 bucket lifecycle rule'
 ---
 
 = Delete an S3 bucket lifecycle rule
+:imagesdir: ./media/
+
+[.lead]
+Deletes a lifecycle rule configuration for an S3 bucket when you no longer need the rule to manage object lifecycles.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/s3/services/{svm.uuid}/buckets/{s3_bucket.uuid}/rules/{name}`#
 
-*Introduced In:* 9.13
+== Introduced in
+
+ONTAP 9.13
+
+== Usage notes
 
 Deletes the S3 bucket lifecycle rule configuration.
 

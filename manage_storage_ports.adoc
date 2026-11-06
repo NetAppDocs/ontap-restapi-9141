@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_ports.html'
+keywords: 'storage ports,cluster storage,node uuid,port mode,sas adapter'
 summary: 'Manage storage ports'
 ---
 
 = Manage storage ports
+:imagesdir: ./media/
 
-
+[.lead]
+Access and manage storage port configurations within the cluster using this set of endpoints. Retrieve details about all storage ports or specific ports, and update port settings for storage or network functions as needed.
 
 == Retrieving storage port information
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_google_cloud_kms.html'
+keywords: 'google cloud kms, encryption keys, secure store, key management, google reachability, kmip server'
 summary: 'Manage Google Cloud KMS'
 ---
 
 = Manage Google Cloud KMS
+:imagesdir: ./media/
 
-
+[.lead]
+Manage encryption keys securely using Google Cloud Key Management Services (KMS) with ONTAP. Set up a Google Cloud application and provide ONTAP with necessary details to ensure smooth communication and protection of encryption keys.
 
 == Overview
 

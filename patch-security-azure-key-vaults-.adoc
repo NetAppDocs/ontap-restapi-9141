@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-security-azure-key-vaults-.html'
+keywords: 'azure key vault,update configuration,client secret,proxy settings,authorization server,vault subdomain'
 summary: 'Update the AKV configuration'
 ---
 
 = Update the AKV configuration
+:imagesdir: ./media/
+
+[.lead]
+Updates the Azure Key Vault configuration to manage the application's identity and network settings effectively. This is useful for ensuring secure access to the vault and configuring proxy settings when necessary.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/security/azure-key-vaults/{uuid}`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Updates the AKV configuration.
 

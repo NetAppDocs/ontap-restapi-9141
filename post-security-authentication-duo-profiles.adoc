@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-authentication-duo-profiles.html'
+keywords: 'duo profile,profile creation,duo configurations,security login,account owner'
 summary: 'Create a Duo profile'
 ---
 
 = Create a Duo profile
+:imagesdir: ./media/
+
+[.lead]
+Creates a Duo profile for enhanced security authentication to manage multi-factor authentication settings effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/authentication/duo/profiles`#
 
-*Introduced In:* 9.14
+== Introduced in
 
-Creates a Duo profile.
+ONTAP 9.14
 
 == Required properties
 

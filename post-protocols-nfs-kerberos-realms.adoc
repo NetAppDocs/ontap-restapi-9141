@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-nfs-kerberos-realms.html'
+keywords: 'kerberos realm,kerberos configuration,nfs kerberos,nfs protocols,active directory integration,key distribution center'
 summary: 'Create a Kerberos realm'
 ---
 
 = Create a Kerberos realm
+:imagesdir: ./media/
+
+[.lead]
+Creates a Kerberos realm to configure authentication and encryption for secure communication within your network environment. This setup is essential when integrating ONTAP with systems that rely on Kerberos for identity verification and secure data exchange.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/nfs/kerberos/realms`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a Kerberos realm.
+ONTAP 9.6
 
 == Required properties
 

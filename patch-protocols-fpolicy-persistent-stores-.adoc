@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-protocols-fpolicy-persistent-stores-.html'
+keywords: 'fpolicy update,persistent store,svm configuration,fpolicy modify,persistent store configuration'
 summary: 'Update an FPolicy persistent store configuration for an SVM'
 ---
 
 = Update an FPolicy persistent store configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Updates the FPolicy persistent store configuration for an SVM to modify storage policies or settings as needed.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/protocols/fpolicy/{svm.uuid}/persistent-stores/{name}`#
 
-*Introduced In:* 9.14
+== Introduced in
+
+ONTAP 9.14
+
+== Usage notes
 
 Updates a specific FPolicy persistent store configuration for an SVM.
 

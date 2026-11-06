@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_nfs_export_policies.html'
+keywords: 'nfs export,export policies,export rules,export clients,svm policy'
 summary: 'Manage NFS export policies'
 ---
 
 = Manage NFS export policies
+:imagesdir: ./media/
 
-
+[.lead]
+Manage NFS export policies to control access to exported file systems in your ONTAP environment. Use these endpoints to create, update, retrieve, and delete export policies and their associated rules and clients.
 
 == Export Policies
 

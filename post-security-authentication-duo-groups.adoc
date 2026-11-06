@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-authentication-duo-groups.html'
+keywords: 'duo group,create duo group,security authentication,duo integration,group details,account owner'
 summary: 'Create a Duo group'
 ---
 
 = Create a Duo group
+:imagesdir: ./media/
+
+[.lead]
+Creates a Duo group, which helps you organize and manage access control for your Duo authentication settings. Use this endpoint when you need to establish new security groups within your system.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/authentication/duo/groups`#
 
-*Introduced In:* 9.14
+== Introduced in
 
-Creates a Duo Group.
+ONTAP 9.14
 
 == Required properties
 

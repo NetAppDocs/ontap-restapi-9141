@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_create_totp_profiles.html'
+keywords: 'totp profiles,totp configuration,secure shell access,time based otp,user account authentication'
 summary: 'View and create TOTP profiles'
 ---
 
 = View and create TOTP profiles
+:imagesdir: ./media/
 
-
+[.lead]
+Configure TOTP profiles for user accounts to enhance security during SSH access. Use these endpoints to create and retrieve TOTP profiles, ensuring secondary authentication is set up correctly for individual access.
 
 == Overview
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-support-auto-update-updates.html'
+keywords: 'update status,percent complete,expiry time,package id,content type,scheduled time'
 summary: 'Retrieve status of all automatic updates'
 ---
 
 = Retrieve status of all automatic updates
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the status of all automatic updates to stay informed about ongoing or completed update processes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/support/auto-update/updates`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieves the status of all updates.
 

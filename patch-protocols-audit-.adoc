@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-protocols-audit-.html'
+keywords: 'audit configuration,svm updates,modify audit,svm uuid,nas protocols'
 summary: 'Update the audit configuration for an SVM'
 ---
 
 = Update the audit configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Updates the audit configuration for a Storage Virtual Machine (SVM) to modify audit settings according to your requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/protocols/audit/{svm.uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Updates an audit configuration for an SVM.
 

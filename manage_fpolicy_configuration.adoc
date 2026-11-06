@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_fpolicy_configuration.html'
+keywords: 'fpolicy configuration, file access permissions, file operation permissions, cifs monitoring, nfs monitoring'
 summary: 'Manage FPolicy configuration'
 ---
 
 = Manage FPolicy configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Configure FPolicy to control file access permissions and monitor file operations within your ONTAP environment. Use these endpoints to connect partner applications that manage and restrict file access according to policy-defined permissions.
 
 == Overview
 

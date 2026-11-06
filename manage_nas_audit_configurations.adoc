@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_nas_audit_configurations.html'
+keywords: 'nas audit,security events,cifs logon,nfs events,log rotation,log retention'
 summary: 'Manage NAS audit configurations'
 ---
 
 = Manage NAS audit configurations
+:imagesdir: ./media/
 
-
+[.lead]
+Audit NAS events on storage virtual machines (SVMs) to bolster security and monitor CIFS and NFS activities. These endpoints help identify security issues and provide evidence of breaches.
 
 == Overview
 

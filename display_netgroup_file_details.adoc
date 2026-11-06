@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'display_netgroup_file_details.html'
+keywords: 'netgroup file,svm netgroup,netgroup details,netgroup raw,netgroup delete'
 summary: 'Display netgroup file details'
 ---
 
 = Display netgroup file details
+:imagesdir: ./media/
 
-
+[.lead]
+Access netgroup file details for a specific SVM, including retrieval of the raw file and deletion operations. Use these endpoints to manage netgroup file information within your ONTAP environment. Note that the GET collection endpoint is not available for netgroup files.
 
 == Overview
 

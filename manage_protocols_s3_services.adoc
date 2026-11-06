@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_protocols_s3_services.html'
+keywords: 's3 server,s3 configuration,object store,fabric pools,performance monitoring'
 summary: 'Manage protocols S3 services'
 ---
 
 = Manage protocols S3 services
+:imagesdir: ./media/
 
-
+[.lead]
+Use the S3 services endpoints to manage object storage using the Amazon S3 protocol within your ONTAP environment. These endpoints primarily support FabricPool capacity tier use cases, providing a compatible object store solution for storing and managing data.
 
 == Overview
 

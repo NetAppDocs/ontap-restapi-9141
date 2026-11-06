@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cifs_dc_configuration.html'
+keywords: 'cifs configuration, domain controller, preferred dc, svm configuration, fqdn, server ip'
 summary: 'Manage CIFS DC configuration'
 ---
 
 = Manage CIFS DC configuration
+:imagesdir: ./media/
 
-
+[.lead]
+The CIFS domain preferred DC endpoints allow you to manage domain controller configurations for a specific SVM. Use these endpoints to retrieve, create, and delete preferred domain controller settings, ensuring optimal domain communication within your network environment.
 
 == Overview
 

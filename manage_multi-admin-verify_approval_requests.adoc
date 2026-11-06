@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_multi-admin-verify_approval_requests.html'
+keywords: 'multi-admin verification,approval requests,command execution,ontap operation,designated approvers'
 summary: 'Manage multi-admin-verify approval requests'
 ---
 
 = Manage multi-admin-verify approval requests
+:imagesdir: ./media/
 
-
+[.lead]
+Access multi-admin verification request endpoints to handle operations requiring additional approval. Use these APIs to submit and manage requests for commands under multi-admin rules, ensuring compliance with designated approval processes.
 
 == Overview
 

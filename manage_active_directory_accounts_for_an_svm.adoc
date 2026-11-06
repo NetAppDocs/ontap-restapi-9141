@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_active_directory_accounts_for_an_svm.html'
+keywords: 'active directory,svm management,account modification,organizational unit,account deletion'
 summary: 'Manage Active Directory accounts for an SVM'
 ---
 
 = Manage Active Directory accounts for an SVM
+:imagesdir: ./media/
 
-
+[.lead]
+Manage the Active Directory accounts associated with a specific SVM by displaying, modifying, or deleting account details. Use these endpoints to ensure accurate configuration and control of your directory service integrations.
 
 == Overview
 

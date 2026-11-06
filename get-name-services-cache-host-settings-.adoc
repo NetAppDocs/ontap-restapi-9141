@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-name-services-cache-host-settings-.html'
+keywords: 'host cache,retrieve settings,svm settings,cache configuration,negative ttl,dns ttl'
 summary: 'Retrieve a host cache setting for an SVM'
 ---
 
 = Retrieve a host cache setting for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a host cache setting for a specific SVM to review its current configuration. This can help you understand how the host cache is set up for efficient name resolution within the SVM.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/name-services/cache/host/settings/{uuid}`#
 
-*Introduced In:* 9.14
+== Introduced in
+
+ONTAP 9.14
+
+== Usage notes
 
 Retrieves a host cache setting for a given SVM.
 

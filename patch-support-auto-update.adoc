@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-support-auto-update.html'
+keywords: 'automatic update,eula acceptance,update status,auto-update feature,feature status'
 summary: 'Update the current enabled status of an automatic update feature'
 ---
 
 = Update the current enabled status of an automatic update feature
+:imagesdir: ./media/
+
+[.lead]
+Updates the enabled status of the automatic update feature. This action is useful for managing whether automatic updates are currently active or inactive.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/support/auto-update`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Updates the current enabled status of the automatic update feature and accepts the EULA.
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-aggregates-.html'
+keywords: 'aggregate uuid,retrieve aggregate,storage aggregate,aggregate properties,aggregate metrics,aggregate footprint'
 summary: 'Retrieve an aggregate specified by the UUID'
 ---
 
 = Retrieve an aggregate specified by the UUID
+:imagesdir: ./media/
+
+[.lead]
+Retrieves detailed information about a specific aggregate using its UUID to examine the configuration and status of storage resources associated with it.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/aggregates/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves the aggregate specified by the UUID. The recommend query cannot be used for this operation.
 

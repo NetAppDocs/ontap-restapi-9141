@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_or_create_a_collection_of_storage_aggregates.html'
+keywords: 'storage aggregates,retrieve aggregates,create aggregates,storage cluster,aggregate performance'
 summary: 'Retrieve or create a collection of storage aggregates'
 ---
 
 = Retrieve or create a collection of storage aggregates
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve storage aggregate information and create new aggregates using these endpoints to manage and optimize cluster storage. You can query existing aggregates, view recommended configurations, and simulate creation scenarios to determine the best layout for your environment.
 
 == Retrieving storage aggregate information
 

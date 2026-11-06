@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-application-consistency-groups-snapshots-.html'
+keywords: 'consistency group,snapshot details,snapshot uuid,consistency snapshot,missing volumes,computational cost'
 summary: 'Retrieve a consistency group Snapshot copy'
 ---
 
 = Retrieve a consistency group Snapshot copy
+:imagesdir: ./media/
+
+[.lead]
+Retrieves details of a specific snapshot for a consistency group to access information about its state and configuration. This is useful for monitoring or managing snapshot resources effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/application/consistency-groups/{consistency_group.uuid}/snapshots/{uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Retrieves details of a specific snapshot for a consistency group.
+ONTAP 9.10
 
 == Expensive properties
 

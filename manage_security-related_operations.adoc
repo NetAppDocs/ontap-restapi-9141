@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_security-related_operations.html'
+keywords: 'security operations,encryption conversion,software encryption,fips mode,tls configuration'
 summary: 'Manage security-related operations'
 ---
 
 = Manage security-related operations
+:imagesdir: ./media/
 
-
+[.lead]
+Utilize security-related endpoints to manage and configure encryption, protocols, and compliance settings across your ONTAP cluster. These operations help secure data at rest, control access protocols, and implement cryptographic standards.
 
 :doctype: book
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-security-ipsec-policies-.html'
+keywords: 'ipsec policy,ipsec policies,policy delete,delete policy,ipsec management'
 summary: 'Delete an IPsec policy'
 ---
 
 = Delete an IPsec policy
+:imagesdir: ./media/
+
+[.lead]
+Deletes an IPsec policy to remove its configuration from the system, typically when it's no longer needed for network security settings.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/security/ipsec/policies/{uuid}`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Deletes a specific IPsec policy.
 

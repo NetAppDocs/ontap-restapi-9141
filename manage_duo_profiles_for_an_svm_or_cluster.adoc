@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_duo_profiles_for_an_svm_or_cluster.html'
+keywords: 'duo profiles,svm cluster management,duo profile configuration,svm owner uuid,duo profile modification'
 summary: 'Manage Duo profiles for an SVM or cluster'
 ---
 
 = Manage Duo profiles for an SVM or cluster
+:imagesdir: ./media/
 
-
+[.lead]
+Configure Duo profiles for secure authentication within your storage virtual machines (SVMs) or clusters. Use these endpoints to retrieve, modify, or delete Duo profiles associated with specific SVMs.
 
 == Overview
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-aggregates.html'
+keywords: 'aggregates retrieval,cluster aggregates,storage aggregates,aggregate layout,raid configuration'
 summary: 'Retrieve a collection of aggregates for an entire cluster'
 ---
 
 = Retrieve a collection of aggregates for an entire cluster
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the collection of aggregates for an entire cluster to examine and manage storage resources comprehensively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/aggregates`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves the collection of aggregates for the entire cluster.
+ONTAP 9.6
 
 == Expensive properties
 

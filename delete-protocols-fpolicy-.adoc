@@ -3,16 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-fpolicy-.html'
+keywords: 'fpolicy configuration,svm management,policy disable,delete fpolicy,remove fpolicy,svm uuid'
 summary: 'Delete the FPolicy configuration for an SVM'
 ---
 
 = Delete the FPolicy configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Deletes the FPolicy configuration for a specified SVM to manage or remove associated policies effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/fpolicy/{svm.uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Deletes the FPolicy configuration for the specified SVM. Before deleting the FPolicy configuration, ensure that all policies belonging to the SVM are disabled.
+ONTAP 9.6
+
+== Usage notes
+
+Before deleting the FPolicy configuration, ensure that all policies belonging to the SVM are disabled.
 
 == Related ONTAP commands
 

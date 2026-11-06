@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-cluster-software-download.html'
+keywords: 'software download,firmware package,server location,cluster image,download package'
 summary: 'Download a software or firmware package'
 ---
 
 = Download a software or firmware package
+:imagesdir: ./media/
+
+[.lead]
+Downloads a software or firmware package from the server to update or install new features on your system. Use this endpoint when you need to retrieve the latest software versions or firmware updates directly from the server.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cluster/software/download`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Downloads a software or firmware package from the server.
+ONTAP 9.6
 
 == Required properties
 

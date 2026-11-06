@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-security-gcp-kms-.html'
+keywords: 'gcp kms,google cloud kms,delete kms,security configuration,cloud key manager'
 summary: 'Delete a Google Cloud KMS configuration'
 ---
 
 = Delete a Google Cloud KMS configuration
+:imagesdir: ./media/
+
+[.lead]
+Deletes a Google Cloud KMS configuration to remove its association with your system when it is no longer needed.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/security/gcp-kms/{uuid}`#
 
-*Introduced In:* 9.9
+== Introduced in
 
-Deletes a Google Cloud KMS configuration.
+ONTAP 9.9
 
 == Related ONTAP commands
 

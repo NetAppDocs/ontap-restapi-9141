@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-qtrees-.html'
+keywords: 'qtree properties,volume uuid,qtree id,storage qtree,qtree statistics,qtree show'
 summary: 'Retrieve qtree properties'
 ---
 
 = Retrieve qtree properties
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the properties of a specific qtree using its identifiers. This operation allows you to understand the configuration and attributes of the qtree within the storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/qtrees/{volume.uuid}/{id}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves properties for a specific qtree identified by the `volume.uuid` and the `id` in the API path.
 

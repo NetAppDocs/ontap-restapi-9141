@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_resource_tags.html'
+keywords: 'resource tags,tagging resources,volume tags,manage tags,tracking purposes'
 summary: 'Manage resource tags'
 ---
 
 = Manage resource tags
+:imagesdir: ./media/
 
-
+[.lead]
+Use resource tag endpoints to list, create, and delete tags associated with various resources. These endpoints help you organize and track resources by specific tag values, such as environment or team.
 
 = Overview
 

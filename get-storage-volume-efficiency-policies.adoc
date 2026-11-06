@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-volume-efficiency-policies.html'
+keywords: 'volume efficiency,efficiency policy,storage policies,volume collection,data efficiency'
 summary: 'Retrieve volume efficiency policies'
 ---
 
 = Retrieve volume efficiency policies
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a collection of volume efficiency policies to review and manage efficiency settings for volumes in your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/volume-efficiency-policies`#
 
-*Introduced In:* 9.8
+== Introduced in
 
-Retrieves a collection of volume efficiency policies.
+ONTAP 9.8
 
 == Related ONTAP commands
 

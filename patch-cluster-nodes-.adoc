@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-cluster-nodes-.html'
+keywords: 'cluster nodes,shutdown action,reboot reason,storage failover,service processor'
 summary: 'Update node information'
 ---
 
 = Update node information
+:imagesdir: ./media/
+
+[.lead]
+Updates node information and manages node operations, such as shutdown or reboot, to maintain or adjust your system's performance and configuration.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/cluster/nodes/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Updates the node information or performs shutdown/reboot actions on a node.
 

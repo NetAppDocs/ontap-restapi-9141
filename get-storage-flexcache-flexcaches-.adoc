@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-flexcache-flexcaches-.html'
+keywords: 'flexcache attributes,retrieve flexcache,flexcache cluster,flexcache properties,flexcache namespace,flexcache volume'
 summary: 'Retrieve attributes of the FlexCache volume in the cluster'
 ---
 
 = Retrieve attributes of the FlexCache volume in the cluster
+:imagesdir: ./media/
+
+[.lead]
+Retrieves attributes of the FlexCache volume in the cluster to examine its configuration and operational state. Use this when you need detailed information about the FlexCache, such as its size, origin details, and space guarantee style.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/flexcache/flexcaches/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves attributes of the FlexCache in the cluster.
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-network-ethernet-switches.html'
+keywords: 'ethernet switch,create switch,switch ip,switch model,snmp version,network management'
 summary: 'Create an Ethernet switch'
 ---
 
 = Create an Ethernet switch
+:imagesdir: ./media/
+
+[.lead]
+Creates an Ethernet switch to establish and manage network connectivity for your ONTAP system. Use this operation to configure the switch's properties, such as its name, IP address, and model number, ensuring it aligns with your network's architecture.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/network/ethernet/switches`#
 
-*Introduced In:* 9.11
+== Introduced in
 
-Creates an ethernet switch.
+ONTAP 9.11
 
 == Required properties
 

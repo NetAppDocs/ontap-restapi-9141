@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-volumes-top-metrics-clients.html'
+keywords: 'io activity,volume uuid,top metrics,svm filter,iops read,iops write'
 summary: 'Retrieve clients with the most I/O activity'
 ---
 
 = Retrieve clients with the most I/O activity
+:imagesdir: ./media/
+
+[.lead]
+Accesses a list of clients that have the highest I/O activity, which helps in analyzing and optimizing performance.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/volumes/{volume.uuid}/top-metrics/clients`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieves a list of clients with the most IO activity.
 

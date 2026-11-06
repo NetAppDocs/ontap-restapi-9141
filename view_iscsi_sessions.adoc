@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_iscsi_sessions.html'
+keywords: 'iscsi sessions,iscsi initiator,iscsi target,tcp connections,ontap san'
 summary: 'View iSCSI sessions'
 ---
 
 = View iSCSI sessions
+:imagesdir: ./media/
 
-
+[.lead]
+The iSCSI sessions REST API provides details about iSCSI initiators that have successfully connected to targets in ONTAP. Use these endpoints to view and manage iSCSI session information, including TCP connections and associated target portal groups.
 
 == Overview
 

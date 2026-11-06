@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_fc_network_interfaces.html'
+keywords: 'fibre channel,network interfaces,performance monitoring,interface placement,cluster node'
 summary: 'Manage FC network interfaces'
 ---
 
 = Manage FC network interfaces
+:imagesdir: ./media/
 
-
+[.lead]
+Fibre Channel (FC) interfaces are logical endpoints for FC network connections within an SVM, providing access using either the Fibre Channel Protocol (FCP) or NVMe over FC (NVMe/FC). Use these endpoints to create, delete, update, and discover FC interfaces, and obtain status information. Performance monitoring and interface placement recommendations are also supported, enhancing the management of your FC network interfaces.
 
 == Overview
 

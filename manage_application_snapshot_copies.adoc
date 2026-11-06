@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_application_snapshot_copies.html'
+keywords: 'snapshot copies,application consistent,crash consistent,snapcenter backup,rpo setting'
 summary: 'Manage application Snapshot copies'
 ---
 
 = Manage application Snapshot copies
+:imagesdir: ./media/
 
-
+[.lead]
+Create and restore application Snapshot copies across all member storage elements to maintain data consistency and availability. Use these endpoints to manage consistency types for record keeping, with application-consistent copies tracked separately from crash-consistent ones. For optimal integration, coordinate with host applications using the SnapCenter Backup Management suite.
 
 == Overview
 

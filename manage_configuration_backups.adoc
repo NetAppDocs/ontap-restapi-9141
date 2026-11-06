@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_configuration_backups.html'
+keywords: 'configuration backup,cluster backup,node backup,backup deletion,backup retrieval,backup creation'
 summary: 'Manage configuration backups'
 ---
 
 = Manage configuration backups
+:imagesdir: ./media/
 
-
+[.lead]
+Manage configuration backups to create, delete, and retrieve backup files on demand within your ONTAP cluster. Utilize these endpoints to handle both cluster-wide and node-specific configurations, ensuring flexibility in maintaining system settings.
 
 == Overview
 

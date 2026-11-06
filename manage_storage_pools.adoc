@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_pools.html'
+keywords: 'storage pools,shared storage,flash capacity,cache tiers,usable spares'
 summary: 'Manage storage pools'
 ---
 
 = Manage storage pools
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve and create shared storage pools within the cluster using these endpoints. Access detailed information such as UUID, name, and spare allocations, or simulate the creation of new storage pools with specified properties.
 
 == Retrieving storage pool information
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-nvme-subsystems.html'
+keywords: 'nvme subsystems,retrieve subsystems,subsystem maps,os type filter,serial number filter,svm name filter'
 summary: 'Retrieve NVMe subsystems'
 ---
 
 = Retrieve NVMe subsystems
+:imagesdir: ./media/
+
+[.lead]
+Retrieves information about NVMe subsystems, which helps you understand their configuration and status for protocol operations.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/nvme/subsystems`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves NVMe subsystems.
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-namespaces-.html'
+keywords: 'nvme namespace,storage namespaces,retrieve nvme,ontap nvme,namespace uuid,subsystem map'
 summary: 'Retrieve an NVMe namespace'
 ---
 
 = Retrieve an NVMe namespace
+:imagesdir: ./media/
+
+[.lead]
+Retrieves an NVMe namespace to access details about configured NVMe storage resources. Use this endpoint when you need specific information about the namespace attributes, especially when working with advanced storage configurations.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/namespaces/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves an NVMe namespace.
+ONTAP 9.6
 
 == Expensive properties
 

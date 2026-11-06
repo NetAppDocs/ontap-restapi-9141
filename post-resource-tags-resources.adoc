@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-resource-tags-resources.html'
+keywords: 'resource tags,create tag,new tag,specific resource,resource management,return records'
 summary: 'Create a new tag for a resource'
 ---
 
 = Create a new tag for a resource
+:imagesdir: ./media/
+
+[.lead]
+Creates a new tag on a specified resource, which helps you organize and manage your resources effectively. Use this endpoint when you need to categorize resources or track specific attributes across your environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/resource-tags/{resource_tag.value}/resources`#
 
-*Introduced In:* 9.13
+== Introduced in
+
+ONTAP 9.13
+
+== Usage notes
 
 Creates a new tag on a specific resource.
 
