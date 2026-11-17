@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_security-related_accounts.html'
+keywords: 'security accounts, user management, cluster level, svm level, multifactor authentication, rbac role'
 summary: 'Manage security-related accounts'
 ---
 
 = Manage security-related accounts
+:imagesdir: ./media/
 
-
+[.lead]
+Manage security-related user accounts to control access and permissions within your ONTAP cluster. Create custom user accounts with specific privileges, configure authentication methods, and enforce multifactor authentication where applicable.
 
 == Overview
 

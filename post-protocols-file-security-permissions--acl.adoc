@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-file-security-permissions--acl.html'
+keywords: 'file security,permissions,acl,access control,slag,file directory'
 summary: 'Add a new SACL or DACL ACE'
 ---
 
 = Add a new SACL or DACL ACE
+:imagesdir: ./media/
+
+[.lead]
+Adds a new SACL or DACL ACE to a volume to define security access control settings. This operation is useful for configuring file and directory permissions according to your security requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/file-security/permissions/{svm.uuid}/{path}/acl`#
 
-*Introduced In:* 9.9
+== Introduced in
+
+ONTAP 9.9
+
+== Usage notes
 
 Adds the new SACL/DACL ACE.
 You must keep the following points in mind while using these endpoints:

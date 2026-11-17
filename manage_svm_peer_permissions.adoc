@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_svm_peer_permissions.html'
+keywords: 'svm peer permissions,intercluster permissions,peer relationship,svm name,local svm'
 summary: 'Manage SVM peer permissions'
 ---
 
 = Manage SVM peer permissions
+:imagesdir: ./media/
 
-
+[.lead]
+Manage SVM peer permissions to streamline intercluster SVM peer relationship creation without requiring explicit acceptance for incoming requests. These endpoints simplify permission handling by allowing wildcard SVM names to apply permissions across all local SVMs.
 
 == Managing SVM peer permissions
 

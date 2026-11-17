@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_flexcache_origin_volumes.html'
+keywords: 'flexcache origin,flexvol flexgroup,intra vserver,cross cluster,origin volume'
 summary: 'Manage storage FlexCache origin volumes'
 ---
 
 = Manage storage FlexCache origin volumes
+:imagesdir: ./media/
 
-
+[.lead]
+Manage the origin configurations of FlexCache volumes to optimize data access and caching strategies within your storage environment. These operations support various configurations, including intra-Vserver, cross-Vserver, and cross-cluster scenarios, enabling effective fan-out for multiple FlexCache instances from a single origin volume.
 
 == Overview
 

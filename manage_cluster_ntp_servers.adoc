@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cluster_ntp_servers.html'
+keywords: 'cluster ntp,ntp configuration,external ntp,ntp keys,shared key'
 summary: 'Manage cluster NTP servers'
 ---
 
 = Manage cluster NTP servers
+:imagesdir: ./media/
 
-
+[.lead]
+Use these endpoints to add and configure external NTP servers within a cluster. You can update configurations, utilize NTP keys, and retrieve current server settings to ensure accurate time synchronization across your environment.
 
 == Overview
 

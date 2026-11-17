@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cluster-metrocluster-nodes.html'
+keywords: 'metrocluster nodes,configuration state,ha partner,dr mirroring,state,cluster uuid'
 summary: 'Retrieve MetroCluster nodes and configurations'
 ---
 
 = Retrieve MetroCluster nodes and configurations
+:imagesdir: ./media/
+
+[.lead]
+Retrieves MetroCluster nodes and their configurations to understand the current setup of your MetroCluster environment. This can help you monitor or verify node status and configurations as part of maintaining your storage infrastructure.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cluster/metrocluster/nodes`#
 
-*Introduced In:* 9.8
+== Introduced in
 
-Retrieves MetroCluster nodes and their configurations.
+ONTAP 9.8
 
 == Related ONTAP Commands
 

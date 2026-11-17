@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_svms.html'
+keywords: 'manage svms,cluster administrator,svm resources,protocol configuration,svm health'
 summary: 'Manage SVMs'
 ---
 
 = Manage SVMs
+:imagesdir: ./media/
 
-
+[.lead]
+Administrators manage Storage Virtual Machines (SVMs) within a cluster, overseeing tasks such as creating, modifying, and deleting SVMs. SVM administrators focus on configuring resources, including volumes, protocols, and services, based on permissions granted by the cluster administrator.
 
 == Managing SVMs
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_administrative_audit_logs.html'
+keywords: 'audit logs,administrative logs,log records,timestamp index,node name'
 summary: 'View administrative audit logs'
 ---
 
 = View administrative audit logs
+:imagesdir: ./media/
 
-
+[.lead]
+Access administrative audit logs to review detailed records of user activities and system events within your ONTAP environment. Use these endpoints to retrieve comprehensive log entries, including timestamps, node information, and activity details, ensuring thorough monitoring and auditing.
 
 == Overview
 

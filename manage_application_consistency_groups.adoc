@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_application_consistency_groups.html'
+keywords: 'consistency group,snapshot copy,volume consistency,crash consistent,single volume'
 summary: 'Manage application consistency groups'
 ---
 
 = Manage application consistency groups
+:imagesdir: ./media/
 
-
+[.lead]
+Consistency group APIs facilitate managing groups of volumes to ensure data consistency across multiple datasets. These endpoints support operations such as creating snapshots, replicating, or cloning groups of volumes at the same point in time, ideal for applications with datasets spanning multiple volumes.
 
 == Overview
 

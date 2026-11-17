@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_capacity_pool_licenses.html'
+keywords: 'capacity pool,license manager,ontap nodes,data aggregates,capacity leasing,cluster association'
 summary: 'Retrieve capacity pool licenses'
 ---
 
 = Retrieve capacity pool licenses
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve capacity pool license associations and capacity usage details to understand how ONTAP nodes interact with capacity pool licenses. Use these endpoints to monitor capacity leasing and consumption across your cluster.
 
 == Overview
 

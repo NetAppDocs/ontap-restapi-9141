@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-storage-snaplock-file-.html'
+keywords: 'snaplock update,retention time,worm file,expiry time,infinite retention,iso format'
 summary: 'Update the SnapLock retention time of a file'
 ---
 
 = Update the SnapLock retention time of a file
+:imagesdir: ./media/
+
+[.lead]
+Updates the SnapLock retention time of a file to manage the retention period of data in compliance with regulatory requirements. Use this endpoint to adjust or extend the retention time of WORM files, ensuring data is retained for the necessary duration.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/storage/snaplock/file/{volume.uuid}/{path}`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Updates the SnapLock retention time of a file or extends the retention time of a WORM file. Input parameters "expiry_time" or "retention_period" can be used to set or extend the retention time of file. Both "expiry_time" and "retention_period" parameters expect the date in ISO 8601 format. Additionally, the "expiry_time" parameter can also be set to "infinite" or "unspecified" and the "retention_period" parameter can also be set to "infinite". The input parameters are mutually exclusive.
 

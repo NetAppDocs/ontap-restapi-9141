@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cifs_services.html'
+keywords: 'cifs services, storage virtual machine, active directory domain, performance monitoring, netbios aliases'
 summary: 'Manage CIFS services'
 ---
 
 = Manage CIFS services
+:imagesdir: ./media/
 
-
+[.lead]
+Manage CIFS services to configure and control CIFS servers, providing SMB clients access to Storage Virtual Machines (SVMs). Use these endpoints to create, retrieve, update, and delete CIFS server configurations within your cluster.
 
 == Overview
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_s3_service_group_configuration.html'
+keywords: 's3 service,group configuration,access control,s3 policies,svm groups'
 summary: 'Manage S3 service group configuration'
 ---
 
 = Manage S3 service group configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Manage S3 service group configuration endpoints to control access to S3 resources by associating users with policies at the group level. These endpoints facilitate operations such as retrieving, creating, updating, and deleting S3 groups within a Storage Virtual Machine (SVM).
 
 == Overview
 

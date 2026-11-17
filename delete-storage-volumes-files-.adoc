@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-storage-volumes-files-.html'
+keywords: 'delete file,delete directory,volume management,path deletion,recursive delete,throttle deletion'
 summary: 'Delete an existing file or directory'
 ---
 
 = Delete an existing file or directory
+:imagesdir: ./media/
+
+[.lead]
+Removes a file or directory when it is no longer needed. Use this operation to manage your storage resources effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/storage/volumes/{volume.uuid}/files/{path}`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Deletes an existing file or directory. Query-based DELETE operations are not supported.
 
@@ -37,7 +48,7 @@ a|Volume UUID
 |string
 |path
 |True
-a|The relative path of a directory in the volume. The path field requires using "%2E" to represent ".", "%2E%2E" to represent ".." and "%2F" to represent "/" for the path provided. Refer to "relative reference resolution" section in <<Getting_started_with_the_ONTAP_REST_API,Getting started with the ONTAP REST API>> for considerations when using "..".
+a|The relative path of a directory in the volume. The path field requires using "%2E" to represent ".", "%2E%2E" to represent ".." and "%2F" to represent "/" for the path provided. Refer to "relative reference resolution" section in link:getting_started_with_the_ontap_rest_api.html#Getting_started_with_the_ONTAP_REST_API[Getting started with the ONTAP REST API] for considerations when using "..".
 
 
 |recurse

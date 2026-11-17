@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-application-consistency-groups-snapshots-.html'
+keywords: 'snapshot copy,consistency group,complete snapshot,commit snapshot,consistency snapshot,group snapshot'
 summary: 'Complete a consistency group Snapshot copy operation'
 ---
 
 = Complete a consistency group Snapshot copy operation
+:imagesdir: ./media/
+
+[.lead]
+Completes a Snapshot copy operation for a consistency group by committing the existing Snapshot copy to disk. This ensures that the data is saved and the operation is finalized.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/application/consistency-groups/{consistency_group.uuid}/snapshots/{uuid}`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Completes a Snapshot copy operation of a consistency group.
 

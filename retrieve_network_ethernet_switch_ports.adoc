@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_network_ethernet_switch_ports.html'
+keywords: 'ethernet switch,network ports,switch port status,port configuration,mac address,duplex speed'
 summary: 'Retrieve network Ethernet switch ports'
 ---
 
 = Retrieve network Ethernet switch ports
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve detailed port information from ethernet switches within cluster or storage networks using these endpoints. Access configuration and status details to monitor network connectivity effectively.
 
 == Overview
 

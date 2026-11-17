@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-cluster-peers.html'
+keywords: 'cluster peers,peering relationship,remote ip address,passphrase,ipspace,encryption proposed'
 summary: 'Create a peering relationship'
 ---
 
 = Create a peering relationship
+:imagesdir: ./media/
+
+[.lead]
+Creates a peering relationship to establish a connection between clusters, which can include configuring the necessary IP interfaces. Use this operation to facilitate communication and resource sharing between ONTAP clusters, either by specifying a remote IP address for a direct peer setup or by preparing your storage system to accept incoming peering requests from other clusters.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cluster/peers`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Creates a peering relationship and, optionally, the IP interfaces it will use. There are two methods used to create a peering relationship:
 

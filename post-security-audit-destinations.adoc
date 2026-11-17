@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-audit-destinations.html'
+keywords: 'syslog configuration,remote server setup,splunk integration,facility protocol,hostname format,security audit'
 summary: 'Define the remote syslog or splunk server information'
 ---
 
 = Define the remote syslog or splunk server information
+:imagesdir: ./media/
+
+[.lead]
+Defines the remote syslog or Splunk server information to specify where log data is sent for external processing and analysis. Use this endpoint to set up remote logging configurations that meet your monitoring and auditing needs.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/audit/destinations`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Configures remote syslog/splunk server information.
 

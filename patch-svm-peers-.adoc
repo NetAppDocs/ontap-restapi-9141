@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-svm-peers-.html'
+keywords: 'svm peer,update svm,peer relationship,modify peer,suspend peer'
 summary: 'Update an SVM peer relationship'
 ---
 
 = Update an SVM peer relationship
+:imagesdir: ./media/
+
+[.lead]
+Updates an SVM peer relationship to modify its configuration or status, facilitating changes in how peer SVMs interact. This can be useful for managing resource sharing or replication activities between SVMs.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/svm/peers/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Updates the SVM peer relationship.
+ONTAP 9.6
 
 == Related ONTAP commands
 

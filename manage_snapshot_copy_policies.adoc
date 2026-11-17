@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_snapshot_copy_policies.html'
+keywords: 'snapshot policy,snapshot creation,snapshot retention,snapshot schedule,ontap storage,manage snapshots'
 summary: 'Manage Snapshot copy policies'
 ---
 
 = Manage Snapshot copy policies
+:imagesdir: ./media/
 
-
+[.lead]
+Configure and manage Snapshot copy policies to automate and optimize the creation of scheduled Snapshot copies. Utilize these endpoints to associate policies with storage objects, set retention counts, and define expiration periods, ensuring efficient data protection strategies.
 
 == Overview
 

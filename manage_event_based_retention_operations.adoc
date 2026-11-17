@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_event_based_retention_operations.html'
+keywords: 'event retention,retention policy,snaplock operations,manage retention,volume path'
 summary: 'Manage event based retention operations'
 ---
 
 = Manage event based retention operations
+:imagesdir: ./media/
 
-
+[.lead]
+Manage event-based retention operations with these endpoints to display current activities and apply policies on specific volumes or paths. Users with the vsadmin-snaplock role can execute retention operations to ensure compliance and data integrity within the specified parameters.
 
 Use this API to display all Event Based Retention (EBR) operations and to apply an EBR policy on a specified volume or path within the volume. Only a user with security login role vsadmin-snaplock can perform the operation.
 

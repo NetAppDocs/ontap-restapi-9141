@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'nas_endpoints.html'
+keywords: 'nfs server,nfs configuration,export policy,export rule,kerberos authentication,kerberos realm'
 summary: 'ONTAP REST API NAS endpoints'
 ---
 
 = ONTAP REST API NAS endpoints
+:imagesdir: ./media/
 
-
+[.lead]
+Use NAS endpoints to create and manage NFS settings and export policies for a storage virtual machine (SVM). These APIs facilitate tasks like configuring NFS servers and defining access rules based on IP addresses and authentication types. Additionally, leverage Kerberos APIs to set up secure authentication realms and manage interface configurations for enhanced security within client/server environments.
 
 == Overview
 

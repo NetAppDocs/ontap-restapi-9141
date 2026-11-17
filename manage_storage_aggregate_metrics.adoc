@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_aggregate_metrics.html'
+keywords: 'storage aggregate,performance metrics,historical metrics,iops throughput,latency statistics'
 summary: 'Manage storage aggregate metrics'
 ---
 
 = Manage storage aggregate metrics
+:imagesdir: ./media/
 
-
+[.lead]
+Access historical performance metrics for specific storage aggregates using the Storage Aggregate Metrics API. Retrieve detailed statistics on IOPS, latency, and throughput to analyze user and background I/O operations over various time intervals.
 
 == Overview
 

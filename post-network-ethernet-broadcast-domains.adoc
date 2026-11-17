@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-network-ethernet-broadcast-domains.html'
+keywords: 'broadcast domain,create broadcast domain,network ethernet,maximum transmission unit,ipspace'
 summary: 'Create a new broadcast domain'
 ---
 
 = Create a new broadcast domain
+:imagesdir: ./media/
+
+[.lead]
+Creates a new broadcast domain to define a layer 2 network segment for communication between nodes. Use this endpoint to manage network configurations and optimize data flow within your ONTAP environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/network/ethernet/broadcast-domains`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a new broadcast domain.
+ONTAP 9.6
 
 == Required properties
 

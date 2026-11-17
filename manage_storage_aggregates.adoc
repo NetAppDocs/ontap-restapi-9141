@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_aggregates.html'
+keywords: 'storage aggregates,aggregate modification,disk count,raid configuration,ssd cache'
 summary: 'Manage storage aggregates'
 ---
 
 = Manage storage aggregates
+:imagesdir: ./media/
 
-
+[.lead]
+Manage storage aggregates in your ONTAP cluster by modifying their properties with the PATCH operation. Use these endpoints to update aggregate attributes such as name, node location, state, and disk configurations to optimize storage performance and capacity. Certain operations, like expanding disk count, are blocked during specific conditions to ensure data integrity and system stability.
 
 == Updating storage aggregates
 

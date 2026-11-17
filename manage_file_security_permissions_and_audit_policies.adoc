@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_file_security_permissions_and_audit_policies.html'
+keywords: 'ntfs security, file permissions, audit policies, slag acl, access control'
 summary: 'Manage file security permissions and audit policies'
 ---
 
 = Manage file security permissions and audit policies
+:imagesdir: ./media/
 
-
+[.lead]
+Configure NTFS file security permissions and audit policies directly through the API to streamline management without a client interface. These endpoints simplify the creation and application of security descriptors, allowing you to add access control entries to discretionary and system access control lists. Use them to efficiently set up and modify file and directory security, including Storage-Level Access Guard (SLAG) ACLs, with minimal parameters.
 
 == Overview
 

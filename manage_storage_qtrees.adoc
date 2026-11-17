@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_qtrees.html'
+keywords: 'qtree management, qtree qos, flexvol qtree, svm qtree, qtree permissions, qtree export policy'
 summary: 'Manage storage qtrees'
 ---
 
 = Manage storage qtrees
+:imagesdir: ./media/
 
-
+[.lead]
+Manage storage qtrees through endpoints that allow you to create, retrieve, modify, and delete qtrees within volumes. Use these APIs to enforce QoS policies and configure properties such as security styles, permissions, and export policies.
 
 == Overview
 

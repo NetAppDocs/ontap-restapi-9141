@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-fpolicy-persistent-stores.html'
+keywords: 'fpolicy configuration,fpolicy stores,fpolicy svm,svm uuid,store retrieval,persistent configurations'
 summary: 'Retrieve the FPolicy persistent store configurations for an SVM'
 ---
 
 = Retrieve the FPolicy persistent store configurations for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the FPolicy persistent store configurations for an SVM to gain insights into the configuration settings associated with a specific SVM's FPolicy persistent store.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/fpolicy/{svm.uuid}/persistent-stores`#
 
-*Introduced In:* 9.14
+== Introduced in
+
+ONTAP 9.14
+
+== Usage notes
 
 Retrieves FPolicy persistent store configurations for a specified SVM.
 

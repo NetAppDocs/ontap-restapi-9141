@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_unix_user_configurations.html'
+keywords: 'unix user configuration,local unix user,svm unix user,manage unix user,unix user update'
 summary: 'Manage UNIX user configurations'
 ---
 
 = Manage UNIX user configurations
+:imagesdir: ./media/
 
-
+[.lead]
+Access and manipulate UNIX user configurations to manage user accounts on your data Storage Virtual Machines (SVMs). Use these endpoints to display local UNIX user information, create configurations, and update or delete user settings as needed.
 
 == Overview
 

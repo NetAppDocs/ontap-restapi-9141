@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'san_endpoints.html'
+keywords: 'fibre channel,iscsi sessions,wwpn aliases,lun maps,initiator groups,vvol bindings'
 summary: 'ONTAP REST API SAN endpoints'
 ---
 
 = ONTAP REST API SAN endpoints
+:imagesdir: ./media/
 
-
+[.lead]
+The SAN endpoints provide the tools necessary to configure, provision, and manage SAN-related objects. Use these endpoints to effectively administer storage area network configurations and maintain optimal storage operations within your environment.
 
 == Overview
 

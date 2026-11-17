@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-cifs-users-and-groups-privileges.html'
+keywords: 'cifs privileges,user privileges,active directory privileges,local user privileges,svm privileges,privilege retrieval'
 summary: 'Retrieve privileges for all local, or Active Directory users or groups and SVMs'
 ---
 
 = Retrieve privileges for all local, or Active Directory users or groups and SVMs
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the privileges of a specified local or Active Directory user or group and SVM. This function helps you manage access control by understanding the permissions assigned to these entities.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/cifs/users-and-groups/privileges`#
 
-*Introduced In:* 9.9
+== Introduced in
 
-Retrieves privileges of the specified local or Active Directory user or group and SVM.
+ONTAP 9.9
 
 == Related ONTAP commands
 

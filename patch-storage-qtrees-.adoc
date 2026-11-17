@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-storage-qtrees-.html'
+keywords: 'update qtree,qtree properties,qtree modify,qtree rename,volume uuid,qtree id'
 summary: 'Update properties for a qtree'
 ---
 
 = Update properties for a qtree
+:imagesdir: ./media/
+
+[.lead]
+Updates the properties of a qtree to modify its configuration according to your needs. This operation is useful when adjusting settings to optimize storage management or align with changing requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/storage/qtrees/{volume.uuid}/{id}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Updates properties for a specific qtree.
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-san-fcp-services.html'
+keywords: 'fc protocol,retrieves services,latency metric,throughput statistics,iops filter,fcp show'
 summary: 'Retrieve FC protocol services'
 ---
 
 = Retrieve FC protocol services
+:imagesdir: ./media/
+
+[.lead]
+Retrieves Fibre Channel (FC) protocol services to access the current configuration and operational status of FC services in your storage environment. This information helps you manage and optimize your storage networking setup.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/san/fcp/services`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves FC Protocol services.
 

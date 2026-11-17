@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-vscan-scanner-pools.html'
+keywords: 'vscan configuration,svm scanner-pool,scanner pool settings,vscan servers,privileged users'
 summary: 'Retrieve the Vscan scanner-pool configuration for an SVM'
 ---
 
 = Retrieve the Vscan scanner-pool configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Accesses the Vscan scanner-pool configuration for a specific SVM to review its setup details. This is useful when assessing or auditing the virus scanning configuration linked to your storage resources.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/vscan/{svm.uuid}/scanner-pools`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves the Vscan scanner-pool configuration of an SVM.
 

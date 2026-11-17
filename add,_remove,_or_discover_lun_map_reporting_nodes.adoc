@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'add,_remove,_or_discover_lun_map_reporting_nodes.html'
+keywords: 'lun map,reporting nodes,selective lun map,cluster nodes,san protocols'
 summary: 'Add, remove, or discover LUN map reporting nodes'
 ---
 
 = Add, remove, or discover LUN map reporting nodes
+:imagesdir: ./media/
 
-
+[.lead]
+Modify LUN map reporting nodes to manage network path advertisements for mapped LUNs using SAN protocols in ONTAP. This helps optimize path configurations and maintain efficient access to storage resources.
 
 == Overview
 

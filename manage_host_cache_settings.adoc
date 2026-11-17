@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_host_cache_settings.html'
+keywords: 'host cache settings,manage cache,svm cache settings,negative cache,ttl settings'
 summary: 'Manage host cache settings'
 ---
 
 = Manage host cache settings
+:imagesdir: ./media/
 
-
+[.lead]
+Manage cache settings for hosts using this API to optimize data retrieval and storage performance. Retrieve, update, and configure settings to tailor cache behavior for specific host requirements.
 
 == Overview
 

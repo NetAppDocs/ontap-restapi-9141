@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-cluster-licensing-licenses.html'
+keywords: 'install license,feature license,license key,system license,license management'
 summary: 'Install one or more feature licenses'
 ---
 
 = Install one or more feature licenses
+:imagesdir: ./media/
+
+[.lead]
+Installs one or more feature licenses by providing the necessary license keys. This operation is typically used to enable additional features or capabilities on your system.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cluster/licensing/licenses`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Installs one or more feature licenses.
+ONTAP 9.6
 
 == Required properties
 

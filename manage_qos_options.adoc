@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_qos_options.html'
+keywords: 'quality of service,qos configuration,qos management,background task,cluster qos,storage qos'
 summary: 'Manage QoS options'
 ---
 
 = Manage QoS options
+:imagesdir: ./media/
 
-
+[.lead]
+Configure Quality of Service (QoS) options to optimize and manage performance levels across your ONTAP system. Use these endpoints to retrieve and modify QoS settings, ensuring consistent application performance.
 
 == Quality of Service Options
 

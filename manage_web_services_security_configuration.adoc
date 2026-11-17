@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_web_services_security_configuration.html'
+keywords: 'web services security, data svm configuration, certificate management, client enabled, ocsp enabled'
 summary: 'Manage web services security configuration'
 ---
 
 = Manage web services security configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Update and retrieve web services security configurations for each data SVM using this API. Typical uses include managing certificates, enabling or disabling client and OCSP settings, and ensuring secure communication for web services.
 
 You can use this API to update and retrieve the web services security configuration for each data SVM.
 

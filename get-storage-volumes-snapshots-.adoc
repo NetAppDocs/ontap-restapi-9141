@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-volumes-snapshots-.html'
+keywords: 'volume snapshot,snapshot details,volume uuid,snapshot uuid,snapshot copy'
 summary: 'Retrieve volume Snapshot copy details'
 ---
 
 = Retrieve volume Snapshot copy details
+:imagesdir: ./media/
+
+[.lead]
+Retrieves detailed information about a specific volume Snapshot copy. This helps you understand and manage your Snapshot configurations effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/volumes/{volume.uuid}/snapshots/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves details of a specific volume Snapshot copy.
 

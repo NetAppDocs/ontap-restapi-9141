@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-vscan-scanner-pools.html'
+keywords: 'vscan configuration,scanner pool creation,svm scanner pool,privileged users,server list,local cluster'
 summary: 'Create the Vscan scanner-pool configuration for an SVM'
 ---
 
 = Create the Vscan scanner-pool configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Creates a Vscan scanner-pool configuration for a specified Storage Virtual Machine (SVM). This endpoint is useful when you need to define scanner pools with specific servers and privileged users, essential for efficient virus scanning operations within your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/vscan/{svm.uuid}/scanner-pools`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Creates a Vscan scanner-pool configuration for a specified SVM. You can create a scanner-pool with all fields specified or only mandatory fields specified.
 

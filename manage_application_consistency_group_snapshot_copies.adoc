@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_application_consistency_group_snapshot_copies.html'
+keywords: 'snapshot copy,consistency group,crash consistent,application consistent,restore snapshot,snapshot schedule'
 summary: 'Manage application consistency group Snapshot copies'
 ---
 
 = Manage application consistency group Snapshot copies
+:imagesdir: ./media/
 
-
+[.lead]
+Explore endpoints for creating, managing, and restoring Snapshot copies within application consistency groups. Use these operations to ensure data consistency across your storage environment, especially when coordinating with host applications.
 
 == Overview
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_local_mapping_for_hostnames.html'
+keywords: 'local mapping,hostnames management,hosts table,retrieve hostnames,svm address'
 summary: 'Manage local mapping for hostnames'
 ---
 
 = Manage local mapping for hostnames
+:imagesdir: ./media/
 
-
+[.lead]
+Manage local hostname mappings to display and modify entries in the hosts table. Use these endpoints to retrieve, create, update, and delete local-hosts records for efficient hostname resolution within your ONTAP environment.
 
 == Overview
 

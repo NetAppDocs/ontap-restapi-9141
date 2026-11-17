@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-snapshot-policies-schedules.html'
+keywords: 'snapshot copy,policy schedules,snapshot policy,retrieval schedules,snapshot collection'
 summary: 'Retrieve Snapshot copy policy schedules'
 ---
 
 = Retrieve Snapshot copy policy schedules
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a collection of schedules associated with Snapshot copy policies. Use this endpoint to review and manage the timing and frequency of snapshots in your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/snapshot-policies/{snapshot_policy.uuid}/schedules`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Retrieves a collection of Snapshot copy policy schedules.
 

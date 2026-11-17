@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_application_logs.html'
+keywords: 'manage logs,autosupport events,ems events,application logs,event severity'
 summary: 'Manage application logs'
 ---
 
 = Manage application logs
+:imagesdir: ./media/
 
-
+[.lead]
+Log events from standalone applications onto the ONTAP system using POST requests, encapsulating them as EMS events. These endpoints are essential for tracking application behavior and optionally generating AutoSupports based on event severity.
 
 == Overview
 

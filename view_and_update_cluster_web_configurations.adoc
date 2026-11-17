@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_update_cluster_web_configurations.html'
+keywords: 'cluster web configuration,web services update,csrf protection,https port,http port'
 summary: 'View and update cluster web configurations'
 ---
 
 = View and update cluster web configurations
+:imagesdir: ./media/
 
-
+[.lead]
+Use these endpoints to view and update cluster web services configurations. Retrieve current settings or apply updates to optimize web service functionality within your cluster environment.
 
 = Overview
 

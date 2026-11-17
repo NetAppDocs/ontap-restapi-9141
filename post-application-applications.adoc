@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-application-applications.html'
+keywords: 'create application,san application,nas application,template properties,application component,storage service'
 summary: 'Create an application'
 ---
 
 = Create an application
+:imagesdir: ./media/
+
+[.lead]
+Creates an application using a single template to automate the best practices for your desired application. Focus on the specific template of interest to ensure you provide only the necessary properties, such as the application's name and SVM, for efficient configuration.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/application/applications`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates an application.
+ONTAP 9.6
 
 == Template properties
 

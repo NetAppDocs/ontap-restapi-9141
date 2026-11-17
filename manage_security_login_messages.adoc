@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_security_login_messages.html'
+keywords: 'security login,login messages,cluster message,svm message,login banner,message of the day'
 summary: 'Manage security login messages'
 ---
 
 = Manage security login messages
+:imagesdir: ./media/
 
-
+[.lead]
+Manage security login messages to configure and display login banners and messages across your cluster and specific storage virtual machines (SVMs). Retrieve current configurations using GET requests, and update them with PATCH operations, either at the cluster level or by specific UUIDs.
 
 == Overview
 

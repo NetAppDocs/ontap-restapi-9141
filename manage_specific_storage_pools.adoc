@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_specific_storage_pools.html'
+keywords: 'storage pools,modify storage,expand storage,delete storage,spare capacity'
 summary: 'Manage specific storage pools'
 ---
 
 = Manage specific storage pools
+:imagesdir: ./media/
 
-
+[.lead]
+Modify storage pool properties using the PATCH operation to update attributes such as name and disk count. These endpoints support simulated storage pool expansion, providing projected capacity changes before actual modification. Deleting pools is restricted if their cache capacity is actively used by aggregates.
 
 == Updating storage pools
 

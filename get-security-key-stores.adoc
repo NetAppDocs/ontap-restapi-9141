@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security-key-stores.html'
+keywords: 'keystores,retrieve keystores,security key-store,key manager,show keystore,key-store location'
 summary: 'Retrieve keystores'
 ---
 
 = Retrieve keystores
+:imagesdir: ./media/
+
+[.lead]
+Retrieves keystores to access and manage the storage of encryption keys within your environment. This functionality is essential for ensuring secure data handling and compliance with encryption standards.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security/key-stores`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Retrieves keystores.
+ONTAP 9.10
 
 == Related ONTAP commands
 

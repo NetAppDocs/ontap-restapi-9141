@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-security-multi-admin-verify-approval-groups-.html'
+keywords: 'multi admin verify,approval group,security update,group update,multi admin group'
 summary: 'Update a multi-admin-verify approval group'
 ---
 
 = Update a multi-admin-verify approval group
+:imagesdir: ./media/
+
+[.lead]
+Updates a multi-admin-verify approval group to modify its settings or configuration. This is useful when you need to adjust approval criteria to align with new security policies or administrative requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/security/multi-admin-verify/approval-groups/{owner.uuid}/{name}`#
 
-*Introduced In:* 9.11
+== Introduced in
 
-Updates a multi-admin-verify approval group.
-
+ONTAP 9.11
 
 == Parameters
 

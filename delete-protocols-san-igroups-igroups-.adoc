@@ -3,16 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-san-igroups-igroups-.html'
+keywords: 'initiator group,remove initiator,delete initiator group,nested initiator,remove relationship,lun igroup'
 summary: 'Remove a nested initiator group from an initiator group'
 ---
 
 = Remove a nested initiator group from an initiator group
+:imagesdir: ./media/
+
+[.lead]
+Removes a nested initiator group from an initiator group to modify the hierarchy of your initiator group associations. This operation maintains the nested initiator group but eliminates its link to the parent group.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/san/igroups/{igroup.uuid}/igroups/{uuid}`#
 
-*Introduced In:* 9.9
+== Introduced in
 
-Removes a nested initiator group from an initiator group. This API does not delete the nested initiator group itself. It removes the relationship between a parent and child initiator group.
+ONTAP 9.9
+
+== Usage notes
+
+This API does not delete the nested initiator group itself. It removes the relationship between a parent and child initiator group.
 
 This API only supports removal of initiator groups owned directly by the initiator group. Further nested initiator groups must be removed from the direct parent initiator group.
 

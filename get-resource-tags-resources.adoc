@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-resource-tags-resources.html'
+keywords: 'resource tag,filter label,svm filter,return timeout,max records'
 summary: 'Retrieve the resources for a tag'
 ---
 
 = Retrieve the resources for a tag
+:imagesdir: ./media/
+
+[.lead]
+Retrieves resources associated with a specific tag to view and manage the tagged entities within your ONTAP environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/resource-tags/{resource_tag.value}/resources`#
 
-*Introduced In:* 9.13
+== Introduced in
+
+ONTAP 9.13
+
+== Usage notes
 
 Retrieves the resources for a specific tag
 

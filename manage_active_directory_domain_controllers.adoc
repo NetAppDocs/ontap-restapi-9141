@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_active_directory_domain_controllers.html'
+keywords: 'active directory,domain controllers,manage controller,preferred configuration,svm settings,controller deletion'
 summary: 'Manage Active Directory domain controllers'
 ---
 
 = Manage Active Directory domain controllers
+:imagesdir: ./media/
 
-
+[.lead]
+Use these endpoints to manage Active Directory domain controller configurations within an SVM. Retrieve, create, and delete preferred domain controller settings to ensure optimal network authentication and access control.
 
 == Overview
 

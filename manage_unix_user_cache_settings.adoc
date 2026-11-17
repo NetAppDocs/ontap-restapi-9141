@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_unix_user_cache_settings.html'
+keywords: 'unix user cache,cache settings,svm settings,negative cache,cache propagation'
 summary: 'Manage UNIX user cache settings'
 ---
 
 = Manage UNIX user cache settings
+:imagesdir: ./media/
 
-
+[.lead]
+Use the UNIX user cache settings endpoints to retrieve and manage cache configurations for UNIX users within your system. These endpoints help optimize access by controlling cache duration and propagation for specific Storage Virtual Machines (SVMs).
 
 == Overview
 

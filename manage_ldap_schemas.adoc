@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_ldap_schemas.html'
+keywords: 'ldap schemas,ms-ad-bis,rfc-2307,ad-idmu,windows unix integration'
 summary: 'Manage LDAP schemas'
 ---
 
 = Manage LDAP schemas
+:imagesdir: ./media/
 
-
+[.lead]
+Access and manage LDAP schemas within your ONTAP environment using these endpoints. Choose from the provided default schemas suited for various Windows and UNIX server deployments to ensure compatibility and optimize directory services integration.
 
 == Overview
 

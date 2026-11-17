@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-nfs-kerberos-realms.html'
+keywords: 'kerberos realms,nfs kerberos,realms retrieval,kdc filter,encryption types'
 summary: 'Retrieve Kerberos realms'
 ---
 
 = Retrieve Kerberos realms
+:imagesdir: ./media/
+
+[.lead]
+Retrieves Kerberos realms to access the configuration details necessary for managing Kerberos authentication in your environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/nfs/kerberos/realms`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves Kerberos realms.
+ONTAP 9.6
 
 == Related ONTAP commands
 

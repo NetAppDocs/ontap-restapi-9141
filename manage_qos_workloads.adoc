@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_qos_workloads.html'
+keywords: 'qos workloads, storage management, quality of service, cluster workloads, workload tracking'
 summary: 'Manage QoS workloads'
 ---
 
 = Manage QoS workloads
+:imagesdir: ./media/
 
-
+[.lead]
+Track and manage Quality of Service (QoS) workloads within your ONTAP environment. Use these endpoints to monitor and optimize storage performance for specific workloads.
 
 == Quality of Service Workloads
 

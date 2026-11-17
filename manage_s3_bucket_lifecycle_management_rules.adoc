@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_s3_bucket_lifecycle_management_rules.html'
+keywords: 's3 bucket lifecycle,s3 management rules,ontap rest,svm bucket rules,s3 object actions'
 summary: 'Manage S3 bucket lifecycle management rules'
 ---
 
 = Manage S3 bucket lifecycle management rules
+:imagesdir: ./media/
 
-
+[.lead]
+Manage S3 bucket lifecycle management rules to define actions on objects within the bucket. Use these endpoints to add, update, or delete rules associated with specific buckets under an SVM.
 
 == Overview
 

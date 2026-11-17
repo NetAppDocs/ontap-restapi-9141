@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-support-auto-update-configurations.html'
+keywords: 'auto update,configuration retrieval,update configurations,filter configurations,record limit'
 summary: 'Retrieve the configuration for an automatic update'
 ---
 
 = Retrieve the configuration for an automatic update
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the configuration settings for automatic updates to review or manage update processes efficiently.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/support/auto-update/configurations`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieves the configuration for automatic updates.
 

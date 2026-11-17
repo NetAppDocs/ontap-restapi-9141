@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_ems_configuration.html'
+keywords: 'event management,ems configuration,email parameters,smtp server,system-wide settings'
 summary: 'Manage EMS configuration'
 ---
 
 = Manage EMS configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Configure general parameters of the Event Management System (EMS) to tailor system-wide notifications and alerts for your environment. Use these endpoints to adjust email settings and retrieve current EMS configurations.
 
 == Overview
 

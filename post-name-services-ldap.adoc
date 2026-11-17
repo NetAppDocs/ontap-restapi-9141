@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-name-services-ldap.html'
+keywords: 'ldap configuration,svm ldap,active directory domain,ldap servers,ipv6 enabled,mutually exclusive fields'
 summary: 'Create the LDAP configuration for an SVM'
 ---
 
 = Create the LDAP configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Creates an LDAP configuration for an SVM, establishing directory service settings required for authentication and identity management. Use this endpoint to define how your SVM interacts with LDAP servers or an Active Directory domain, ensuring proper user and group access control.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/name-services/ldap`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates an LDAP configuration for an SVM.
+ONTAP 9.6
 
 == Important notes
 

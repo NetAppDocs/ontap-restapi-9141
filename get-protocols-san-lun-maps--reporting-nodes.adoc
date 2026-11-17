@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-san-lun-maps--reporting-nodes.html'
+keywords: 'lun maps,reporting nodes,san protocols,lun mapping,igroup uuid'
 summary: 'Retrieve LUN map reporting nodes'
 ---
 
 = Retrieve LUN map reporting nodes
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the nodes associated with LUN map reporting, offering insight into the mapping configuration for storage management tasks.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/san/lun-maps/{lun.uuid}/{igroup.uuid}/reporting-nodes`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieves LUN map reporting nodes.
 

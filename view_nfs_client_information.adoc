@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_nfs_client_information.html'
+keywords: 'nfs client,connected clients,map functionality,system manager,client information,client ips'
 summary: 'View NFS client information'
 ---
 
 = View NFS client information
+:imagesdir: ./media/
 
-
+[.lead]
+Access details about NFS clients connected to your ONTAP system using the connected clients map functionality. This feature helps System Manager display important client information, such as node and SVM identifiers, server IPs, and connected client IPs.
 
 == Overview
 

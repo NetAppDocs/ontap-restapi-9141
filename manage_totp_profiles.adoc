@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_totp_profiles.html'
+keywords: 'totp profiles,configure totp,user account totp,totp deletion,modify totp'
 summary: 'Manage TOTP profiles'
 ---
 
 = Manage TOTP profiles
+:imagesdir: ./media/
 
-
+[.lead]
+Configure TOTP profiles for user accounts using this API. Specify the owner UUID and account user name, which are essential for associating the profile with the correct SVM and user account.
 
 == Overview
 

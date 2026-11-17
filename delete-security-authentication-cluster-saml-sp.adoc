@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-security-authentication-cluster-saml-sp.html'
+keywords: 'saml service provider,delete saml,cluster security,saml configuration,service provider removal'
 summary: 'Delete a SAML service provider configuration'
 ---
 
 = Delete a SAML service provider configuration
+:imagesdir: ./media/
+
+[.lead]
+Removes a configured SAML service provider, which ends its association with the current system.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/security/authentication/cluster/saml-sp`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Deletes a SAML service provider configuration.
 

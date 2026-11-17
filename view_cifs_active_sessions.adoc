@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_cifs_active_sessions.html'
+keywords: 'cifs sessions, smb clients, svm volumes, node uuid, session authentication'
 summary: 'View CIFS active sessions'
 ---
 
 = View CIFS active sessions
+:imagesdir: ./media/
 
-
+[.lead]
+View and manage currently established CIFS sessions with SMB clients using these endpoints. Retrieve detailed session information, including client and volume data, to monitor connections within your storage environment.
 
 == Overview
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_local_group_members.html'
+keywords: 'local group management,add local users,delete local users,active directory integration,svm local groups'
 summary: 'Manage local group members'
 ---
 
 = Manage local group members
+:imagesdir: ./media/
 
-
+[.lead]
+Manage local group members to display and modify the membership of local groups within an SVM. Use these endpoints to add or remove local users, Active Directory users, and groups to ensure accurate group compositions.
 
 == Overview
 

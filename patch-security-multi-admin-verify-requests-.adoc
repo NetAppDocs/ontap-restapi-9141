@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-security-multi-admin-verify-requests-.html'
+keywords: 'multi-admin verify,update request,security request,multi-admin security,multi-admin update'
 summary: 'Update a multi-admin-verify request'
 ---
 
 = Update a multi-admin-verify request
+:imagesdir: ./media/
+
+[.lead]
+Updates a multi-admin-verify request to modify its parameters or status as needed. This helps ensure that the verification process aligns with the current administrative requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/security/multi-admin-verify/requests/{index}`#
 
-*Introduced In:* 9.11
+== Introduced in
 
-Updates a multi-admin-verify request.
-
+ONTAP 9.11
 
 == Parameters
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-nfs-services.html'
+keywords: 'nfs configuration,svm settings,protocols nfs,security settings,nfs features,network lock manager'
 summary: 'Retrieve the NFS configuration for SVMs'
 ---
 
 = Retrieve the NFS configuration for SVMs
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the NFS configuration for storage virtual machines (SVMs) to understand how NFS is set up and ensure it meets your network file sharing needs.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/nfs/services`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves the NFS configuration of SVMs.
 

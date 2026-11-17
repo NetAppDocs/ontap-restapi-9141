@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-svm-svms-top-metrics-files.html'
+keywords: 'svm metrics,file io,io activity,top files,svm uuid,svm name'
 summary: 'List files with the most I/O activity'
 ---
 
 = List files with the most I/O activity
+:imagesdir: ./media/
+
+[.lead]
+Gets a list of files with the most I/O activity. Use this information to identify and analyze high-usage files for performance optimization or troubleshooting.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/svm/svms/{svm.uuid}/top-metrics/files`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Retrieves a list of files with the most IO activity.
 

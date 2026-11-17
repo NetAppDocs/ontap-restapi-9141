@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cluster-schedules.html'
+keywords: 'schedule retrieval,cluster schedules,cron schedule,schedule filtering,record limit'
 summary: 'Retrieve schedules'
 ---
 
 = Retrieve schedules
+:imagesdir: ./media/
+
+[.lead]
+Retrieves schedule information to understand and manage timing for various operations.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cluster/schedules`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves a schedule.
-
+ONTAP 9.6
 
 == Parameters
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_ssh_security_configuration.html'
+keywords: 'ssh security,svm configuration,ssh algorithms,payload encryption,key exchange'
 summary: 'Manage SSH security configuration'
 ---
 
 = Manage SSH security configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve or modify the SSH security configuration for a storage virtual machine (SVM) to ensure secure connections. Use these endpoints to specify algorithms for key exchange, payload encryption, and message authentication, as well as set authentication retry limits.
 
 == Overview
 

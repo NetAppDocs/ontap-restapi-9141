@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-svm-peers.html'
+keywords: 'svm peer relationships,svm peers list,vserver peer show,svm cluster peer,svm relationships,svm peer query'
 summary: 'Retrieve SVM peer relationships'
 ---
 
 = Retrieve SVM peer relationships
+:imagesdir: ./media/
+
+[.lead]
+Retrieves SVM peer relationships to view the existing peer connections between storage virtual machines. This helps you manage and verify inter-SVM communications within your infrastructure.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/svm/peers`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves the list of SVM peer relationships.
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'support_endpoints.html'
+keywords: 'configuration backups,autosupport settings,event handling,email parameters,event management system'
 summary: 'ONTAP REST API support endpoints'
 ---
 
 = ONTAP REST API support endpoints
+:imagesdir: ./media/
 
-
+[.lead]
+Utilize the support endpoints to manage configuration backups, autosupport settings, and handle events effectively. These APIs help ensure your system's configuration remains protected and that events are reported accurately for timely troubleshooting and support.
 
 == Overview
 

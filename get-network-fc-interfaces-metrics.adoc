@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-network-fc-interfaces-metrics.html'
+keywords: 'fibre channel,performance metrics,interface metrics,latency metrics,throughput analysis,iops monitoring'
 summary: 'Retrieve historical performance metrics for an FC interface'
 ---
 
 = Retrieve historical performance metrics for an FC interface
+:imagesdir: ./media/
+
+[.lead]
+Retrieves historical performance metrics for a Fibre Channel interface to analyze past behavior and optimize your storage network performance.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/network/fc/interfaces/{fc_interface.uuid}/metrics`#
 
-*Introduced In:* 9.14
+== Introduced in
 
-Retrieves historical performance metrics for a Fibre Channel interface.
-
+ONTAP 9.14
 
 == Parameters
 
